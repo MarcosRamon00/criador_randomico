@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color:white;
+    list-style: none;
+    text-decoration: none;
+}
+
+#titulo{
+    text-align: center;
+}
+#titulo_descricao{
+    text-align: left;
+}
+#titulo_resultado{
+    text-align: left;
+}
+#area_botoes{
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="js/GeradorPersonagem.js"></script>
+    <script src="js/GerarJogo.js"></script>
+    <script src="js/GeradorHistoria.js"></script>
+
+    <title>Random Creator</title>
+</head>
+<body>
+    <h1 id="titulo" class="text-center">Random Creator</h1>
+    <section class="container">
+        <h2 id="titulo_descricao">Descrição</h2>
+        <p>Gerador de ideias para jogo ou personagem de acordo com alguns critérios.</p>
+    </section>
+    <section class="container">
+        <h2 id="titulo_resultado">Gerar</h2>
+        <div id="area_personagem">
+            <h3>Personagem</h3>
+            <ul>
+                <li>RAÇA: <span id="raca"></span></li>
+                <li>CLASSE: <span id="classe"></span></li>
+                <li>QUALIDADE: <span id="qualidade"></span></li>
+                <li>DEFEITO: <span id="defeito"></span></li>
+            </ul>
+        </div>
+        <div id="area_jogo">
+            <h3>Jogo</h3>
+            <ul>
+                <li>ESTILO: <span id="estilo"></span></li>
+                <li>GRAFICOS: <span id="graficos"></span></li>
+                <li>TEMA: <span id="tema"></span></li>
+                <li>JOGABILIDADE: <span id="jogabilidade"></span></li>
+            </ul>
+        </div>
+    </section>
+    <section id="area_botoes" class="container">
+        <div class="text-center">
+            <button id="botao_personagem" onclick="gerarPersonagem()">Personagem</button>
+            <button id="botao_jogo" onclick="gerarJogo()">Jogo</button>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="text-left">Referencias</h2>
+        <ul>
+            <li>
+                <p>genero de jogos eletronicos em:
+                    <a href="https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos">https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos</a>
+                </p>
+            </li>
+        </ul>
+    </section>
+    <script>
+        //configuracao inicial
+        document.getElementById("area_personagem").hidden = true;
+        document.getElementById("area_jogo").hidden = true;
+
+        //personagem
+        function mostrarSoPersonagem(){//esconder jogo mostrar personagem
+            document.getElementById("area_personagem").hidden = false;
+            document.getElementById("area_jogo").hidden = true;
+        }
+        function gerarPersonagem(){//gerar personagem
+            mostrarSoPersonagem();
+            var personagem = new Personagem();
+            document.getElementById("raca").innerHTML = personagem.raca;
+            document.getElementById("classe").innerHTML = personagem.classe;
+            document.getElementById("qualidade").innerHTML = personagem.qualidade;
+            document.getElementById("defeito").innerHTML = personagem.defeito;
+        }
+        //jogo
+        function mostrarSoJogo(){//esconder personagem mostrar jogo
+            document.getElementById("area_personagem").hidden = true;
+            document.getElementById("area_jogo").hidden = false;
+        }
+        function gerarJogo(){//gerar jogo
+            mostrarSoJogo();
+            var jogo = new Jogo();
+            document.getElementById("estilo").innerHTML = jogo.estilo;
+            document.getElementById("graficos").innerHTML = jogo.graficos;
+            document.getElementById("tema").innerHTML = jogo.tema;
+            document.getElementById("jogabilidade").innerHTML = jogo.jogabilidade;
+        }
+    </script>
+</body>
+</html>
