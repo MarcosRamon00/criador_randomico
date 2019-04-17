@@ -20,7 +20,7 @@ function Personagem(){
     }
 
     function setRaca(){
-        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil"]; 
+        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental"]; 
         return lista_raca[escolherCaracteristica(lista_raca)];
     }
 
