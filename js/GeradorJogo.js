@@ -3,6 +3,7 @@ const jogo = {
     graficos:'',
     tema:'',
     jogabilidade:'',
+    
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
     },
@@ -26,6 +27,7 @@ const jogo = {
         let lista_jogabilidade = ["shooter","MOBA","TURN BASED","luta","point and click","sandbox","open world","plataforma","hack and slash","beat and up","run and gun"];
         return lista_jogabilidade[this.escolherCaracteristica(lista_jogabilidade)];
     },
+
     gerar:function(){
         this.estilo = this.setEstilo();
         this.graficos = this.setGraficos();
