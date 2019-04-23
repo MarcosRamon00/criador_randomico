@@ -3,7 +3,7 @@ const personagem = {
     classe:'',
     qualidade:'',
     defeito:'',
-    
+
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
     },

@@ -10,46 +10,49 @@
     <script src="js/GeradorPersonagem.js"></script>
     <script src="js/GeradorJogo.js"></script>
 
-    <title>Criador Randomico</title>
+    <title>Criador Randômico</title>
 </head>
 <body>
-    <h1 id="titulo" class="text-center">Criador Randomico</h1>
+    <h1 id="titulo" class="text-center">Criador Randômico</h1>
     <section class="container">
         <h2 id="titulo_descricao">Descrição</h2>
         <p>Gerador de ideias para jogo ou personagem de acordo com alguns critérios.</p>
     </section>
     <section class="container">
-        <h2 id="titulo_resultado">Gerar</h2>
         <div id="area_personagem">
-            <h3>Personagem</h3>
-            <ul>
-                <li>RAÇA: <span id="raca"></span></li>
-                <li>CLASSE: <span id="classe"></span></li>
-                <li>QUALIDADE: <span id="qualidade"></span></li>
-                <li>DEFEITO: <span id="defeito"></span></li>
+            <h3>>Personagem</h3>
+            <ul class="list-unstyled">
+                <li>RAÇA: <span class="font-weight-bold" id="raca"></span></li>
+                <li>CLASSE: <span class="font-weight-bold" id="classe"></span></li>
+                <li>QUALIDADE: <span class="font-weight-bold" id="qualidade"></span></li>
+                <li>DEFEITO: <span class="font-weight-bold" id="defeito"></span></li>
             </ul>
         </div>
         <div id="area_jogo">
-            <h3>Jogo</h3>
-            <ul>
-                <li>ESTILO: <span id="estilo"></span></li>
-                <li>GRAFICOS: <span id="graficos"></span></li>
-                <li>TEMA: <span id="tema"></span></li>
-                <li>JOGABILIDADE: <span id="jogabilidade"></span></li>
+            <h3>>Jogo</h3>
+            <ul class="list-unstyled">
+                <li>ESTILO: <span class="font-weight-bold" id="estilo"></span></li>
+                <li>GRÁFICOS: <span class="font-weight-bold" id="graficos"></span></li>
+                <li>TEMA: <span class="font-weight-bold" id="tema"></span></li>
+                <li>JOGABILIDADE: <span class="font-weight-bold" id="jogabilidade"></span></li>
             </ul>
         </div>
     </section>
     <section id="area_botoes" class="container">
+        <hr>
         <div class="text-center">
-            <button id="botao_personagem" onclick="gerarPersonagem()">Personagem</button>
-            <button id="botao_jogo" onclick="gerarJogo()">Jogo</button>
+            <div class="text-center btn-group" role="group" aria-label="click">
+                <button type="button" id="botao_personagem" class="btn btn-secondary" onclick="gerarPersonagem()">Personagem</button>
+                <button type="button" id="botao_jogo" class="btn btn-secondary" onclick="gerarJogo()">Jogo</button>
+            </div>
         </div>
+        <hr>
     </section>
     <section class="container">
-        <h2 class="text-left">Referencias</h2>
-        <ul>
+        <h2 class="text-left">Referências</h2>
+        <ul class="list-unstyled">
             <li>
-                <p>Genero de jogos eletronicos em:
+                <p>Gênero de jogos eletrônicos em:
                     <a href="https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos">https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos</a>
                 </p>
             </li>
@@ -57,7 +60,7 @@
     </section>
     <section class="container">
         <h2 class="text-left">Framework utilizados</h2>
-        <ul>
+        <ul class="list-unstyled">
             <li>
                 <p>Bootstrap 4 - css disponivel em:
                     <a href="https://getbootstrap.com/"> https://getbootstrap.com/</a>
