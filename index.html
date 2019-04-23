@@ -67,30 +67,30 @@
     </section>
     <script>
         //configuracao inicial
-        document.getElementById("area_personagem").hidden = true;
-        document.getElementById("area_jogo").hidden = true;
+        document.getElementById("area_personagem").hidden = true;//deixa a area do personagem escondida
+        document.getElementById("area_jogo").hidden = true;//deixa a area do jogo escondida
 
         //personagem
-        function mostrarSoPersonagem(){//esconder jogo mostrar personagem
-            document.getElementById("area_personagem").hidden = false;
-            document.getElementById("area_jogo").hidden = true;
+        function mostrarSomentePersonagem(){//esconder jogo mostrar personagem
+            document.getElementById("area_personagem").hidden = false;//mostra a area do personagem
+            document.getElementById("area_jogo").hidden = true;//deixa escondido a area do jogo
         }
         function gerarPersonagem(){//gerar personagem
-            mostrarSoPersonagem();
-            var personagem = new Personagem();
+            mostrarSomentePersonagem();//mostra somente a area do personagem
+            var personagem = new Personagem();//gera personagem
             document.getElementById("raca").innerHTML = personagem.raca;
             document.getElementById("classe").innerHTML = personagem.classe;
             document.getElementById("qualidade").innerHTML = personagem.qualidade;
             document.getElementById("defeito").innerHTML = personagem.defeito;
         }
         //jogo
-        function mostrarSoJogo(){//esconder personagem mostrar jogo
-            document.getElementById("area_personagem").hidden = true;
-            document.getElementById("area_jogo").hidden = false;
+        function mostrarSomenteJogo(){//esconder personagem mostrar jogo
+            document.getElementById("area_personagem").hidden = true;//deixa a area do personagem escondida
+            document.getElementById("area_jogo").hidden = false;//mostra a area do jogo
         }
         function gerarJogo(){//gerar jogo
-            mostrarSoJogo();
-            var jogo = new Jogo();
+            mostrarSomenteJogo();//mostra somente a area do jogo
+            var jogo = new Jogo();//gera jogo
             document.getElementById("estilo").innerHTML = jogo.estilo;
             document.getElementById("graficos").innerHTML = jogo.graficos;
             document.getElementById("tema").innerHTML = jogo.tema;
