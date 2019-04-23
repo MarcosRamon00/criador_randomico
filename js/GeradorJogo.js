@@ -4,15 +4,15 @@ function Jogo(){
     var tema;
     var jogabilidade;
 
-    this.setEstilo = setEstilo;
-    this.setGraficos = setGraficos;
-    this.setTema = setTema;
-    this.setJogabilidade = setJogabilidade;
-
     this.estilo = this.setEstilo();
     this.graficos = this.setGraficos();
     this.tema = this.setTema();
     this.jogabilidade = this.setJogabilidade();
+
+    this.setEstilo = setEstilo;
+    this.setGraficos = setGraficos;
+    this.setTema = setTema;
+    this.setJogabilidade = setJogabilidade;
 
     function escolherCaracteristica(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));

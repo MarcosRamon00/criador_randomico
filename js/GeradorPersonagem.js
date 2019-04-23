@@ -4,16 +4,15 @@ function Personagem(){
     var qualidade;
     var defeito;
 
-    this.setRaca = setRaca;
-    this.setClasse = setClasse;
-    this.setQualidade = setQualidade;
-    this.setDefeito = setDefeito;
-
     this.raca = this.setRaca();
     this.classe = this.setClasse();
     this.qualidade = this.setQualidade();
     this.defeito = this.setDefeito();
 
+    this.setRaca = setRaca;
+    this.setClasse = setClasse;
+    this.setQualidade = setQualidade;
+    this.setDefeito = setDefeito;
 
     function escolherCaracteristica(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
