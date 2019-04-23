@@ -1,41 +1,36 @@
-function Personagem(){
-    var raca;
-    var classe;
-    var qualidade;
-    var defeito;
-
-    this.raca = this.setRaca();
-    this.classe = this.setClasse();
-    this.qualidade = this.setQualidade();
-    this.defeito = this.setDefeito();
-
-    this.setRaca = setRaca;
-    this.setClasse = setClasse;
-    this.setQualidade = setQualidade;
-    this.setDefeito = setDefeito;
-
-    function escolherCaracteristica(lista){//escolhe caracterista de uma lista
+const personagem = {
+    raca :'',
+    classe:'',
+    qualidade:'',
+    defeito:'',
+    escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
-    }
-
-    function setRaca(){
+    },
+    
+    setRaca:function(){
         let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental"]; 
-        return lista_raca[escolherCaracteristica(lista_raca)];
-    }
+        return lista_raca[this.escolherCaracteristica(lista_raca)];
+    },
 
-    function setClasse(){
+    setClasse:function(){
         let lista_classe = ["guerreiro(a)","mago(a)","bruxo(a)","paladino(a)","amazona","cantor",
     "medico(a)","sabio(a)","soldado(a)"];
-        return lista_classe[escolherCaracteristica(lista_classe)];
-    }
+        return lista_classe[this.escolherCaracteristica(lista_classe)];
+    },
 
-    function setQualidade(){
+    setQualidade:function(){
         let lista_qualidade = ["sorte","força","inteligencia","resistencia","beleza","carisma"];
-        return lista_qualidade[escolherCaracteristica(lista_qualidade)];
-    }
+        return lista_qualidade[this.escolherCaracteristica(lista_qualidade)];
+    },
 
-    function setDefeito(){
+    setDefeito:function(){
         let lista_defeito = ["azar","fraqueza fisica","ignorancia","feiura","bruto"];
-        return lista_defeito[escolherCaracteristica(lista_defeito)];
+        return lista_defeito[this.escolherCaracteristica(lista_defeito)];
+    },
+    gerar:function(){
+        this.raca = this.setRaca();
+        this.classe = this.setClasse();
+        this.qualidade = this.setQualidade();
+        this.defeito = this.setDefeito();
     }
 }

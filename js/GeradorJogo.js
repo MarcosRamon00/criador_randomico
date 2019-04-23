@@ -1,40 +1,35 @@
-function Jogo(){
-    var estilo;
-    var graficos;
-    var tema;
-    var jogabilidade;
-
-    this.estilo = this.setEstilo();
-    this.graficos = this.setGraficos();
-    this.tema = this.setTema();
-    this.jogabilidade = this.setJogabilidade();
-
-    this.setEstilo = setEstilo;
-    this.setGraficos = setGraficos;
-    this.setTema = setTema;
-    this.setJogabilidade = setJogabilidade;
-
-    function escolherCaracteristica(lista){//escolhe caracterista de uma lista
+const jogo = {
+    estilo:'',
+    graficos:'',
+    tema:'',
+    jogabilidade:'',
+    
+    escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
-    }
-
-    function setEstilo(){
+    },
+    setEstilo:function(){
         let lista_estilo = ["labirinto","corrida sem fim","quebra cabeça","horror","FPS","ficção interativa","escape the room","Puzzle adventure","visual novel","RTS","RPG","JRPG","esporte","corrida","simulação","MMO","stealth"]; 
-        return lista_estilo[escolherCaracteristica(lista_estilo)];
-    }
-
-    function setGraficos(){
+        return lista_estilo[this.escolherCaracteristica(lista_estilo)];
+    },
+    
+    setGraficos:function(){
         let lista_graficos = ["3D","2D","2.5D","texto","vetorial"];
-        return lista_graficos[escolherCaracteristica(lista_graficos)];
-    }
+        return lista_graficos[this.escolherCaracteristica(lista_graficos)];
+    },
 
-    function setTema(){
+    setTema:function(){
         let lista_tema = ["velho oeste","futurista","cyberpunk","diselpunk","pos apocaliptico"];
-        return lista_tema[escolherCaracteristica(lista_tema)];
-    }
+        return lista_tema[this.escolherCaracteristica(lista_tema)];
+    },
 
-    function setJogabilidade(){
+    setJogabilidade:function(){
         let lista_jogabilidade = ["shooter","MOBA","TURN BASED","luta","point and click","sandbox","open world","plataforma","hack and slash","beat and up","run and gun"];
-        return lista_jogabilidade[escolherCaracteristica(lista_jogabilidade)];
+        return lista_jogabilidade[this.escolherCaracteristica(lista_jogabilidade)];
+    },
+    gerar:function(){
+        this.estilo = this.setEstilo();
+        this.graficos = this.setGraficos();
+        this.tema = this.setTema();
+        this.jogabilidade = this.setJogabilidade();
     }
 }

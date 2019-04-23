@@ -75,9 +75,11 @@
             document.getElementById("area_personagem").hidden = false;//mostra a area do personagem
             document.getElementById("area_jogo").hidden = true;//deixa escondido a area do jogo
         }
+
         function gerarPersonagem(){//gerar personagem
             mostrarSomentePersonagem();//mostra somente a area do personagem
-            var personagem = new Personagem();//gera personagem
+            //var personagem = new Personagem();//gera personagem
+            personagem.construtor();
             document.getElementById("raca").innerHTML = personagem.raca;
             document.getElementById("classe").innerHTML = personagem.classe;
             document.getElementById("qualidade").innerHTML = personagem.qualidade;
@@ -90,7 +92,8 @@
         }
         function gerarJogo(){//gerar jogo
             mostrarSomenteJogo();//mostra somente a area do jogo
-            var jogo = new Jogo();//gera jogo
+            //var jogo = new Jogo();//gera jogo
+            jogo.construtor();
             document.getElementById("estilo").innerHTML = jogo.estilo;
             document.getElementById("graficos").innerHTML = jogo.graficos;
             document.getElementById("tema").innerHTML = jogo.tema;
