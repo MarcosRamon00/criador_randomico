@@ -9,7 +9,7 @@
     
     <script src="js/GeradorPersonagem.js"></script>
     <script src="js/GeradorJogo.js"></script>
-
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Criador Randômico</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     </section>
     <section class="container">
         <div id="area_personagem">
-            <h3>>Personagem</h3>
+            <h3 id="titulo_personagem">Personagem</h3>
             <ul class="list-unstyled">
                 <li>RAÇA: <span class="font-weight-bold" id="raca"></span></li>
                 <li>CLASSE: <span class="font-weight-bold" id="classe"></span></li>
@@ -29,7 +29,7 @@
             </ul>
         </div>
         <div id="area_jogo">
-            <h3>>Jogo</h3>
+            <h3 id="titulo_jogo">Jogo</h3>
             <ul class="list-unstyled">
                 <li>ESTILO: <span class="font-weight-bold" id="estilo"></span></li>
                 <li>GRÁFICOS: <span class="font-weight-bold" id="graficos"></span></li>
@@ -42,8 +42,8 @@
         <hr>
         <div class="text-center">
             <div class="text-center btn-group" role="group" aria-label="click">
-                <button type="button" id="botao_personagem" class="btn btn-secondary" onclick="gerarPersonagem()">Personagem</button>
-                <button type="button" id="botao_jogo" class="btn btn-secondary" onclick="gerarJogo()">Jogo</button>
+                <button type="button" id="botao_personagem" class="btn btn-dark" onclick="gerarPersonagem()">PERSONAGEM</button>
+                <button type="button" id="botao_jogo" class="btn btn-dark" onclick="gerarJogo()">JOGO</button>
             </div>
         </div>
         <hr>
