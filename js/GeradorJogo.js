@@ -3,18 +3,18 @@ const jogo = {
     graficos:'',
     tema:'',
     jogabilidade:'',
-    
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
     },
+
     setEstilo:function(){
         let lista_estilo = ["labirinto","corrida sem fim","quebra cabeça","horror","FPS","ficção interativa","escape the room","Puzzle adventure","visual novel","RTS","RPG","JRPG","esporte","corrida","simulação","MMO","stealth"]; 
         return lista_estilo[this.escolherCaracteristica(lista_estilo)];
     },
     
     setGraficos:function(){
-        let lista_graficos = ["3D","2D","2.5D","texto","vetorial"];
-        return lista_graficos[this.escolherCaracteristica(lista_graficos)];
+       let lista_graficos = ["3D","2D","2.5D","texto","vetorial"];
+       return lista_graficos[this.escolherCaracteristica(lista_graficos)];
     },
 
     setTema:function(){
