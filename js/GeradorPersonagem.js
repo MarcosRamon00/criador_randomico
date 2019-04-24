@@ -15,7 +15,7 @@ const personagem = {
 
     setClasse:function(){
         let lista_classe = ["guerreiro(a)","mago(a)","bruxo(a)","paladino(a)","amazona","cantor",
-    "medico(a)","sabio(a)","soldado(a)"];
+    "medico(a)","sabio(a)"];
         return lista_classe[this.escolherCaracteristica(lista_classe)];
     },
 
