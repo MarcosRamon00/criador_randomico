@@ -2,15 +2,11 @@
 
 ## Descrição
 Cria randomicamente personagens e jogos a partir de critérios pré estabelacidos.
-link: https://marcosramon00.github.io/criador_randomico.github.io/
-
-----
+[link] (https://marcosramon00.github.io/criador_randomico.github.io/)
 
 ## O que é criado:
 - Personagem
 - Jogo eletronicos
-
- ----
 
 ## Critérios utilizados
 ### Personagem
@@ -21,7 +17,7 @@ baseado nos critérios de criação de personagem em RPGs.
 - qualidade (exemplo: sorte e força.)
 - defeito (exemplo: azar e brutalidade.)
 
-###Jogo
+### Jogo
 - estilo (exemplo: corrida sem fim e RPG.)
 - gráficos (exemplo: 3D e 2D.)
 - tema (exemplo: velho oeste e cyberpunk.)
