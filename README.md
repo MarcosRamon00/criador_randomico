@@ -2,7 +2,7 @@
 
 ## Descrição
 Cria randomicamente personagens e jogos a partir de critérios pré estabelacidos.
->> Link: [criador_randomaico.github.io](https://marcosramon00.github.io/criador_randomico.github.io/)
+> Link: [criador_randomaico.github.io](https://marcosramon00.github.io/criador_randomico.github.io/)
 
 ## O que é criado:
 - Personagem
