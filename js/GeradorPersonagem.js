@@ -7,9 +7,9 @@ const personagem = {
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
     },
-    
+
     setRaca:function(){
-        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental"]; 
+        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental","elemental"];
         return lista_raca[this.escolherCaracteristica(lista_raca)];
     },
 
