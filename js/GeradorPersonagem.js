@@ -9,13 +9,13 @@ const personagem = {
     },
 
     setRaca:function(){
-        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental","elemental"];
+        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental","elemental","mutante","alienigina"];
         return lista_raca[this.escolherCaracteristica(lista_raca)];
     },
 
     setClasse:function(){
         let lista_classe = ["guerreiro(a)","mago(a)","bruxo(a)","paladino(a)","amazona","cantor",
-    "medico(a)","sabio(a)"];
+    "medico(a)","sabio(a)","ferreiro","bardo","caçador(a)"];
         return lista_classe[this.escolherCaracteristica(lista_classe)];
     },
 
