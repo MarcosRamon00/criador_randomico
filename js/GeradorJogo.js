@@ -14,12 +14,12 @@ const jogo = {
     },
     
     setGraficos:function(){
-       let lista_graficos = ["3D","2D","2.5D","texto","vetorial"];
+       let lista_graficos = ["3D","2D","2.5D","texto"];
        return lista_graficos[this.escolherCaracteristica(lista_graficos)];
     },
 
     setTema:function(){
-        let lista_tema = ["velho oeste","futurista","cyberpunk","diselpunk","pos apocaliptico","steampunk","retro futurista","medieval","anos 60","anos 70","anos 80","anos 90","anos 2000"];
+        let lista_tema = ["velho oeste","futurista","cyberpunk","diselpunk","pos apocaliptico","steampunk","retro futurista","medieval","anos 10","anos 20","anos 30","anos 40","anos 50","anos 60","anos 70","anos 80","anos 90","anos 2000","antigo egito","inca","maia","asteca","alieniginas","noir"];
         return lista_tema[this.escolherCaracteristica(lista_tema)];
     },
 
