@@ -9,18 +9,18 @@ const personagem = {
     },
 
     setRaca:function(){
-        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental","elemental","mutante","alienigina"];
+        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robo","espirito","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental do ar","elemental da terra","elemetal do raio","mutante","alienigina"];
         return lista_raca[this.escolherCaracteristica(lista_raca)];
     },
 
     setClasse:function(){
         let lista_classe = ["guerreiro(a)","mago(a)","bruxo(a)","paladino(a)","amazona","cantor",
-    "medico(a)","sabio(a)","ferreiro","bardo","caçador(a)"];
+    "médico(a)","sábio(a)","ferreiro","bardo","caçador(a)","bruxo(a)","alquimista","lutador(a) de box","judoka","caçador(a) de recompensas"];
         return lista_classe[this.escolherCaracteristica(lista_classe)];
     },
 
     setQualidade:function(){
-        let lista_qualidade = ["sorte","força","inteligencia","resistencia","beleza","carisma"];
+        let lista_qualidade = ["sorte","força","inteligente","resistente","beleza","carisma","esperteza"];
         return lista_qualidade[this.escolherCaracteristica(lista_qualidade)];
     },
 
