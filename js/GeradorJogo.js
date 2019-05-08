@@ -19,7 +19,7 @@ const jogo = {
     },
 
     setTema:function(){
-        let lista_tema = ["velho oeste","futurista","cyberpunk","diselpunk","pos apocaliptico"];
+        let lista_tema = ["velho oeste","futurista","cyberpunk","diselpunk","pos apocaliptico","steampunk","retro futurista","medieval","anos 60","anos 70","anos 80","anos 90","anos 2000"];
         return lista_tema[this.escolherCaracteristica(lista_tema)];
     },
 
