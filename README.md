@@ -22,3 +22,9 @@ baseado nos critérios de criação de personagem em RPGs.
 - gráficos (exemplo: 3D e 2D.)
 - tema (exemplo: velho oeste e cyberpunk.)
 - jogabilidade (exemplo: shooter e point and click.)
+
+## Referências
+- [Gênero de jogos eletrônicos](https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos)
+
+## Framework utilizados
+- [Bootstrap 4](https://getbootstrap.com/)
