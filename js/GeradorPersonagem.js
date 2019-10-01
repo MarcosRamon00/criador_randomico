@@ -31,7 +31,7 @@ const personagem = {
     },
 
     setMotivacao:function(){
-        let lista_motivacao = ["vingança","tédio","amor","honra","ódio"];
+        let lista_motivacao = ["vingança","tédio","amor","honra","ódio","dinheiro","poder","paz","salvar seu povo","salvar sua família"];
         return lista_motivacao[this.escolherCaracteristica(lista_motivacao)];
     },
 
