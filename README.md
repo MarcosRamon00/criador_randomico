@@ -1,4 +1,4 @@
-# criador_randomico.github.io
+# Criador randomico
 
 ## Descrição
 Cria randomicamente personagens e jogos a partir de critérios pré estabelacidos.
