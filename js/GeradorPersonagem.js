@@ -3,6 +3,7 @@ const personagem = {
     classe:'',
     qualidade:'',
     defeito:'',
+    motivacao:'',
 
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
@@ -28,10 +29,17 @@ const personagem = {
         let lista_defeito = ["azar","fraqueza fisica","ignorancia","feiura","bruto","chatice","irritante","covarde"];
         return lista_defeito[this.escolherCaracteristica(lista_defeito)];
     },
+
+    setMotivacao:function(){
+        let lista_motivacao = ["vingança","tédio","amor","honra","ódio"];
+        return lista_motivacao[this.escolherCaracteristica(lista_motivacao)];
+    },
+
     gerar:function(){
         this.raca = this.setRaca();
         this.classe = this.setClasse();
         this.qualidade = this.setQualidade();
         this.defeito = this.setDefeito();
+        this.motivacao = this.setMotivacao();
     }
 }
