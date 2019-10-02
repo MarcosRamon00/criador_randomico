@@ -39,9 +39,8 @@ const personagem = {
         return lista_motivacao[this.escolherCaracteristica(lista_motivacao)];
     },
     
-    gerarStatus:function(){
+    gerarStatus:function(){//gera a pontuacao para status do personagem
         const total_pontos = 15;
-        pontos_restantes = total_pontos;
         this.pontos_reflexos =  Math.round(Math.random() * (total_pontos - 1));
         this.pontos_inteligencia =  Math.round(Math.random() * (total_pontos - 1));
         this.pontos_forca = Math.round(Math.random() * (total_pontos - 1));
