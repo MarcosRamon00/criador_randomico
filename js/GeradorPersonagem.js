@@ -4,6 +4,10 @@ const personagem = {
     qualidade:'',
     defeito:'',
     motivacao:'',
+    pontos_reflexos:0,
+    pontos_inteligencia:0,
+    pontos_forca:0,
+    pontos_constituicao:0,
 
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
@@ -31,8 +35,17 @@ const personagem = {
     },
 
     setMotivacao:function(){
-        let lista_motivacao = ["vingança","tédio","amor","honra","ódio","dinheiro","poder","paz","salvar seu povo","salvar sua família"];
+        let lista_motivacao = ["vingança","tédio","amor","honra","ódio","dinheiro","poder","em busca de paz interior","salvar seu povo","salvar sua família"];
         return lista_motivacao[this.escolherCaracteristica(lista_motivacao)];
+    },
+    
+    gerarStatus:function(){
+        const total_pontos = 15;
+        pontos_restantes = total_pontos;
+        this.pontos_reflexos =  Math.round(Math.random() * (total_pontos - 1));
+        this.pontos_inteligencia =  Math.round(Math.random() * (total_pontos - 1));
+        this.pontos_forca = Math.round(Math.random() * (total_pontos - 1));
+        this.pontos_constituicao = Math.round(Math.random() * (total_pontos - 1));
     },
 
     gerar:function(){
@@ -41,5 +54,6 @@ const personagem = {
         this.qualidade = this.setQualidade();
         this.defeito = this.setDefeito();
         this.motivacao = this.setMotivacao();
+        this.gerarStatus();
     }
 }

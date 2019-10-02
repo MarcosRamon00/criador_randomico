@@ -27,7 +27,14 @@
                 <li>QUALIDADE: <span class="font-weight-bold" id="qualidade"></span></li>
                 <li>DEFEITO: <span class="font-weight-bold" id="defeito"></span></li>
                 <li>MOTIVAÇÃO: <span class="font-weight-bold" id="motivacao"></span></li>
-            </ul>
+                <li>STATUS:
+                    <ul>
+                        <li>Reflexos: <span class="font-weight-bold" id="pontos_reflexos"></span></li>
+                        <li>Força: <span class="font-weight-bold" id="pontos_forca"></span></li>
+                        <li>Inteligencia: <span class="font-weight-bold" id="pontos_inteligencia"></span></li>
+                        <li>Constituição: <span class="font-weight-bold" id="pontos_constituicao"></span></li>
+                    </ul>
+                </li>
         </div>
         <div id="area_jogo">
             <h3 id="titulo_jogo">Jogo</h3>
@@ -68,6 +75,10 @@
             document.getElementById("qualidade").innerHTML = personagem.qualidade;
             document.getElementById("defeito").innerHTML = personagem.defeito;
             document.getElementById("motivacao").innerHTML = personagem.motivacao;
+            document.getElementById("pontos_reflexos").innerHTML = personagem.pontos_reflexos;
+            document.getElementById("pontos_forca").innerHTML = personagem.pontos_forca; 
+            document.getElementById("pontos_inteligencia").innerHTML = personagem.pontos_inteligencia;
+            document.getElementById("pontos_constituicao").innerHTML = personagem.pontos_constituicao;
         }
         //jogo
         function mostrarSomenteJogo(){//esconder personagem mostrar jogo
