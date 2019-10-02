@@ -14,29 +14,29 @@ const personagem = {
     },
 
     setRaca:function(){
-        let lista_raca = ["humano","fera","demonio","anjo","ciborgue","robô","espírito","humano-peixe","humano-passáro","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental das plantas","elemental do ar","elemental da terra","elemental do raio","elemental de gelo","elemental da luz","elemental da sombra","mutante","alienigina","fada","ogro","anão(a)","golem"];
-        return lista_raca[this.escolherCaracteristica(lista_raca)];
+        let lista_racas = ["humano","fera","demonio","anjo","ciborgue","robô","espírito","humano-peixe","humano-passáro","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental das plantas","elemental do ar","elemental da terra","elemental do raio","elemental de gelo","elemental da luz","elemental da sombra","mutante","alienigina","fada","ogro","anão(a)","golem"];
+        return lista_racas[this.escolherCaracteristica(lista_racas)];
     },
 
     setClasse:function(){
-        let lista_classe = ["guerreiro(a)","mago(a)","bruxo(a)","paladino(a)","amazona","cantor(a)",
+        let lista_classes = ["guerreiro(a)","mago(a)","bruxo(a)","paladino(a)","amazona","cantor(a)",
     "médico(a)","sábio(a)","ferreiro(a)","bardo","caçador(a)","bruxo(a)","alquimista","lutador(a) de box","judoca","caçador(a) de recompensas","arqueiro(a)","lanceiro(a)","necromante","contador(a)"];
-        return lista_classe[this.escolherCaracteristica(lista_classe)];
+        return lista_classes[this.escolherCaracteristica(lista_classes)];
     },
 
     setQualidade:function(){
-        let lista_qualidade = ["fofura","sorte","força","inteligente","resistente","beleza","carisma","esperteza","agil","corajoso(a)"];
-        return lista_qualidade[this.escolherCaracteristica(lista_qualidade)];
+        let lista_qualidades = ["fofura","sorte","força","inteligente","resistente","beleza","carisma","esperteza","agil","corajoso(a)"];
+        return lista_qualidades[this.escolherCaracteristica(lista_qualidades)];
     },
 
     setDefeito:function(){
-        let lista_defeito = ["azar","fraqueza fisica","ignorancia","feiura","bruto","chatice","irritante","covarde"];
-        return lista_defeito[this.escolherCaracteristica(lista_defeito)];
+        let lista_defeitos = ["azar","fraqueza fisica","ignorancia","feiura","bruto","chatice","irritante","covarde"];
+        return lista_defeitos[this.escolherCaracteristica(lista_defeitos)];
     },
 
     setMotivacao:function(){
-        let lista_motivacao = ["vingança","tédio","amor","honra","ódio","dinheiro","poder","em busca de paz interior","salvar seu povo","salvar sua família"];
-        return lista_motivacao[this.escolherCaracteristica(lista_motivacao)];
+        let lista_motivacoes = ["vingança","tédio","amor","honra","ódio","dinheiro","poder","em busca de paz interior","salvar seu povo","salvar sua família"];
+        return lista_motivacoes[this.escolherCaracteristica(lista_motivacoes)];
     },
     
     gerarStatus:function(){//gera a pontuacao para status do personagem
