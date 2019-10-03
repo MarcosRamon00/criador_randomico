@@ -28,3 +28,6 @@ baseado nos critérios de criação de personagem em RPGs.
 
 ## Framework utilizados
 - [Bootstrap 4](https://getbootstrap.com/)
+
+## Contribuidores
+- [Ninjam33](https://github.com/Ninjam33)
