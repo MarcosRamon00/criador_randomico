@@ -25,12 +25,12 @@ const personagem = {
     },
 
     setQualidade:function(){
-        let lista_qualidades = ["fofura","sorte","força","inteligente","resistente","beleza","carisma","esperteza","agil","corajoso(a)"];
+        let lista_qualidades = ["fofura","sorte","força","inteligência","resistência","beleza","carisma","esperteza","ágil","corajoso(a)"];
         return lista_qualidades[this.escolherCaracteristica(lista_qualidades)];
     },
 
     setDefeito:function(){
-        let lista_defeitos = ["azar","fraqueza fisica","ignorancia","feiura","bruto","chatice","irritante","covarde"];
+        let lista_defeitos = ["azar","fraqueza física","ignorância","feiura","bruto","chatice","irritante","covarde"];
         return lista_defeitos[this.escolherCaracteristica(lista_defeitos)];
     },
 
