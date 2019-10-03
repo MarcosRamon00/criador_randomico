@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <script src="js/GeradorPersonagem.js"></script>
@@ -16,51 +19,64 @@
     <h1 id="titulo" class="text-center">Criador Randômico</h1>
     <section class="container">
         <h2 id="titulo_descricao">Descrição</h2>
-        <p>Gerador de ideias para jogo ou personagem de acordo com alguns critérios.</p>
+        <p>Gerador de ideias de acordo com alguns critérios.</p>
     </section>
     <section class="container">
-        <div id="area_personagem">
-            <h3 id="titulo_personagem">Personagem</h3>
-            <ul class="list-unstyled">
-                <li>RAÇA: <span class="font-weight-bold" id="raca"></span></li>
-                <li>CLASSE: <span class="font-weight-bold" id="classe"></span></li>
-                <li>QUALIDADE: <span class="font-weight-bold" id="qualidade"></span></li>
-                <li>DEFEITO: <span class="font-weight-bold" id="defeito"></span></li>
-                <li>MOTIVAÇÃO: <span class="font-weight-bold" id="motivacao"></span></li>
-        </div>
-        <div id="area_jogo">
-            <h3 id="titulo_jogo">Jogo</h3>
-            <ul class="list-unstyled">
-                <li>ESTILO: <span class="font-weight-bold" id="estilo"></span></li>
-                <li>GRÁFICOS: <span class="font-weight-bold" id="graficos"></span></li>
-                <li>TEMA: <span class="font-weight-bold" id="tema"></span></li>
-                <li>JOGABILIDADE: <span class="font-weight-bold" id="jogabilidade"></span></li>
-            </ul>
-        </div>
-    </section>
-    <section id="area_botoes" class="container">
-        <hr>
-        <div class="text-center">
-            <div class="text-center btn-group" role="group" aria-label="click">
-                <button type="button" id="botao_personagem" class="btn btn-dark" onclick="gerarPersonagem()">PERSONAGEM</button>
-                <button type="button" id="botao_jogo" class="btn btn-dark" onclick="gerarJogo()">JOGO</button>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Personagem</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Jogo</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div id="area_personagem">
+                  
+                    <ul class="list-unstyled">
+                        <li>RAÇA: <span class="font-weight-bold" id="raca"></span></li>
+                        <li>CLASSE: <span class="font-weight-bold" id="classe"></span></li>
+                        <li>QUALIDADE: <span class="font-weight-bold" id="qualidade"></span></li>
+                        <li>DEFEITO: <span class="font-weight-bold" id="defeito"></span></li>
+                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="motivacao"></span></li>
+                    </ul>
+                </div>
+                <div id="area_botao_personagem" class="container">
+                    <hr>
+                    <div class="text-center">
+                        <div class="text-center btn-group" role="group" aria-label="click">
+                            <button type="button" id="botao_personagem" class="btn btn-dark" onclick="gerarPersonagem()">GERAR PERSONAGEM</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div id="area_jogo">
+                    
+                    <ul class="list-unstyled">
+                        <li>ESTILO: <span class="font-weight-bold" id="estilo"></span></li>
+                        <li>GRÁFICOS: <span class="font-weight-bold" id="graficos"></span></li>
+                        <li>TEMA: <span class="font-weight-bold" id="tema"></span></li>
+                        <li>JOGABILIDADE: <span class="font-weight-bold" id="jogabilidade"></span></li>
+                    </ul>
+                </div>
+                <div id="area_botao_jogo" class="container">
+                    <hr>
+                    <div class="text-center">
+                        <div class="text-center btn-group" role="group" aria-label="click">
+                            <button type="button" id="botao_personagem" class="btn btn-dark" onclick="gerarJogo()">GERAR JOGO</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </div>
-        <hr>
     </section>
     <script>
-        //configuracao inicial
-        document.getElementById("area_personagem").hidden = true;//deixa a area do personagem escondida
-        document.getElementById("area_jogo").hidden = true;//deixa a area do jogo escondida
-
-        //personagem
-        function mostrarSomentePersonagem(){//esconder jogo mostrar personagem
-            document.getElementById("area_personagem").hidden = false;//mostra a area do personagem
-            document.getElementById("area_jogo").hidden = true;//deixa escondido a area do jogo
-        }
+        
 
         function gerarPersonagem(){//gerar personagem
-            mostrarSomentePersonagem();//mostra somente a area do personagem
+           
             personagem.gerar();//gera personagem
             document.getElementById("raca").innerHTML = personagem.raca;
             document.getElementById("classe").innerHTML = personagem.classe;
@@ -69,12 +85,8 @@
             document.getElementById("motivacao").innerHTML = personagem.motivacao;
         }
         //jogo
-        function mostrarSomenteJogo(){//esconder personagem mostrar jogo
-            document.getElementById("area_personagem").hidden = true;//deixa a area do personagem escondida
-            document.getElementById("area_jogo").hidden = false;//mostra a area do jogo
-        }
+        
         function gerarJogo(){//gerar jogo
-            mostrarSomenteJogo();//mostra somente a area do jogo
             jogo.gerar();//gera jogo
             document.getElementById("estilo").innerHTML = jogo.estilo;
             document.getElementById("graficos").innerHTML = jogo.graficos;
