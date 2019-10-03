@@ -16,7 +16,7 @@ baseado nos critérios de criação de personagem em RPGs.
 - classe (exemplo: guerreiro ou amazona.)
 - qualidade (exemplo: sorte ou força.)
 - defeito (exemplo: azar ou brutalidade.)
-- mativação (exemplo: amor ou honra)
+- motivação (exemplo: amor ou honra)
 
 ### Jogo
 - estilo (exemplo: corrida sem fim e RPG.)
