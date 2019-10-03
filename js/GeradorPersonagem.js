@@ -4,10 +4,7 @@ const personagem = {
     qualidade:'',
     defeito:'',
     motivacao:'',
-    pontos_reflexos:0,
-    pontos_inteligencia:0,
-    pontos_forca:0,
-    pontos_constituicao:0,
+
 
     escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
         return Math.round(Math.random() * (lista.length - 1));
