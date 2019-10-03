@@ -12,10 +12,11 @@ Cria randomicamente personagens e jogos a partir de critérios pré estabelacido
 ### Personagem
 baseado nos critérios de criação de personagem em RPGs.
 
-- raça (exemplo: humano e ciborgue.)
-- classe (exemplo: guerreiro e amazona.)
-- qualidade (exemplo: sorte e força.)
-- defeito (exemplo: azar e brutalidade.)
+- raça (exemplo: humano ou ciborgue.)
+- classe (exemplo: guerreiro ou amazona.)
+- qualidade (exemplo: sorte ou força.)
+- defeito (exemplo: azar ou brutalidade.)
+- mativação (exemplo: amor ou honra)
 
 ### Jogo
 - estilo (exemplo: corrida sem fim e RPG.)
