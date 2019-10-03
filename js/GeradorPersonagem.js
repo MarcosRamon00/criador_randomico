@@ -39,20 +39,11 @@ const personagem = {
         return lista_motivacoes[this.escolherCaracteristica(lista_motivacoes)];
     },
     
-    gerarStatus:function(){//gera a pontuacao para status do personagem
-        const total_pontos = 15;
-        this.pontos_reflexos =  Math.round(Math.random() * (total_pontos - 1));
-        this.pontos_forca = Math.round(Math.random() * (total_pontos - 1));
-        this.pontos_inteligencia =  Math.round(Math.random() * (total_pontos - 1));
-        this.pontos_constituicao = Math.round(Math.random() * (total_pontos - 1));
-    },
-
     gerar:function(){
         this.raca = this.setRaca();
         this.classe = this.setClasse();
         this.qualidade = this.setQualidade();
         this.defeito = this.setDefeito();
         this.motivacao = this.setMotivacao();
-        this.gerarStatus();
     }
 }
