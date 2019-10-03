@@ -22,7 +22,7 @@ const personagem = {
     },
 
     setQualidade:function(){
-        let lista_qualidades = ["fofura","sorte","força","inteligência","resistência","beleza","carisma","esperteza","ágil","corajoso(a)"];
+        let lista_qualidades = ["especialista em algo","fofura","sorte","força","inteligência","resistência","beleza","carisma","esperteza","ágil","corajoso(a)"];
         return lista_qualidades[this.escolherCaracteristica(lista_qualidades)];
     },
 
