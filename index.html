@@ -13,6 +13,7 @@
     <script src="js/GeradorPersonagem.js"></script>
     <script src="js/GeradorJogo.js"></script>
     <script src="js/GerarPet.js"></script>
+    <script src="js/GerardorArma.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Criador Randômico</title>
 </head>
@@ -29,6 +30,7 @@
                 <a class="nav-item nav-link active" id="nav-personagem-tab" data-toggle="tab" href="#nav-personagem" role="tab" aria-controls="nav-personagem" aria-selected="true">Personagem</a>
                 <a class="nav-item nav-link" id="nav-jogo-tab" data-toggle="tab" href="#nav-jogo" role="tab" aria-controls="nav-jogo" aria-selected="false">Jogo</a>
                 <a class="nav-item nav-link" id="nav-pet-tab" data-toggle="tab" href="#nav-pet" role="tab" aria-controls="nav-pet" aria-selected="false">Pet</a>
+                <a class="nav-item nav-link" id="nav-arma-tab" data-toggle="tab" href="#nav-arma" role="tab" aria-controls="nav-arma" aria-selected="false">Arma</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -82,6 +84,22 @@
                     </div>
                 </div>
             </div>
+            <div class="tab-pane fade" id="nav-arma" role="tabpanel" aria-labelledby="nav-arma-tab">
+                <div id="area_arma">        
+                    <ul class="list-unstyled">
+                        <li>ARMA: <span class="font-weight-bold" id="arma"></span></li>
+                        <li>CONDIÇÃO: <span class="font-weight-bold" id="condicao"></span></li>
+                        <li>ESTILO: <span class="font-weight-bold" id="arma_estilo"></span></li>
+                    </ul>
+                </div>
+                <div id="area_botao_arma" class="container">
+                    <div class="text-center">
+                        <div class="text-center btn-group" role="group" aria-label="click">
+                            <button type="button" id="botao_arma" class="btn btn-dark" onclick="gerarArma()">GERAR ARMA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script>
@@ -107,6 +125,13 @@
             pet.gerar();
             document.getElementById("especie").innerHTML = pet.especie;
             document.getElementById("idade").innerHTML = pet.idade;
+        }
+        //arma
+        function gerarArma(){
+            arma.gerar();
+            document.getElementById("arma").innerHTML = arma.arma;
+            document.getElementById("condicao").innerHTML = arma.condicao;
+            document.getElementById("arma_estilo").innerHTML = arma.estilo;
         }
     </script>
     <noscript>
