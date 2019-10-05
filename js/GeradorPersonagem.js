@@ -11,7 +11,7 @@ const personagem = {
     },
 
     setRaca:function(){
-        let lista_racas = ["humano","fera","demônio","anjo","ciborgue","robô","espírito","humano-peixe","humano-passáro","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental das plantas","elemental do ar","elemental da terra","elemental do raio","elemental de gelo","elemental da luz","elemental da sombra","mutante","alienigina","fada","ogro","anão(a)","golem"];
+        let lista_racas = ["humano","fera","demônio","anjo","ciborgue","robô","espírito","humano-peixe","humano-passáro","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental das plantas","elemental do ar","elemental da terra","elemental do raio","elemental de gelo","elemental da luz","elemental da sombra","mutante","alienigina","fada","ogro","anão(a)","golem","dragão","meio dragão"];
         return lista_racas[this.escolherCaracteristica(lista_racas)];
     },
 
