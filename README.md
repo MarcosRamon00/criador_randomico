@@ -24,6 +24,9 @@ baseado nos critérios de criação de personagem em RPGs.
 - tema (exemplo: velho oeste e cyberpunk.)
 - jogabilidade (exemplo: shooter e point and click.)
 
+## Pet
+- especie (exemplo: gato , cachorro e dragão)
+
 ## Referências
 - [Gênero de jogos eletrônicos](https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos)
 
