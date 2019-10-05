@@ -43,13 +43,11 @@
                     </ul>
                 </div>
                 <div id="area_botao_personagem" class="container">
-                    <hr>
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
                             <button type="button" id="botao_personagem" class="btn btn-dark" onclick="gerarPersonagem()">GERAR PERSONAGEM</button>
                         </div>
                     </div>
-                    <hr>
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-jogo" role="tabpanel" aria-labelledby="nav-jogo-tab">
@@ -62,29 +60,26 @@
                     </ul>
                 </div>
                 <div id="area_botao_jogo" class="container">
-                    <hr>
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
                             <button type="button" id="botao_jogo" class="btn btn-dark" onclick="gerarJogo()">GERAR JOGO</button>
                         </div>
                     </div>
-                    <hr>
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-pet" role="tabpanel" aria-labelledby="nav-pet-tab">
                 <div id="area_pet">        
                     <ul class="list-unstyled">
-                        <li>ESPECIE: <span class="font-weight-bold" id="especie"></span></li>
+                        <li>ESPÉCIE: <span class="font-weight-bold" id="especie"></span></li>
+                        <li>IDADE: <span class="font-weight-bold" id="idade"></span></li>
                     </ul>
                 </div>
                 <div id="area_botao_pet" class="container">
-                    <hr>
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
                             <button type="button" id="botao_pet" class="btn btn-dark" onclick="gerarPet()">GERAR PET</button>
                         </div>
                     </div>
-                    <hr>
                 </div>
             </div>
         </div>
@@ -111,6 +106,7 @@
         function gerarPet(){
             pet.gerar();
             document.getElementById("especie").innerHTML = pet.especie;
+            document.getElementById("idade").innerHTML = pet.idade;
         }
     </script>
     <noscript>
