@@ -12,6 +12,7 @@
     
     <script src="js/GeradorPersonagem.js"></script>
     <script src="js/GeradorJogo.js"></script>
+    <script src="js/GerarPet.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Criador Randômico</title>
 </head>
@@ -25,14 +26,14 @@
         <h2 class="text-left">Geradores</h2>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Personagem</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Jogo</a>
+                <a class="nav-item nav-link active" id="nav-personagem-tab" data-toggle="tab" href="#nav-personagem" role="tab" aria-controls="nav-personagem" aria-selected="true">Personagem</a>
+                <a class="nav-item nav-link" id="nav-jogo-tab" data-toggle="tab" href="#nav-jogo" role="tab" aria-controls="nav-jogo" aria-selected="false">Jogo</a>
+                <a class="nav-item nav-link" id="nav-pet-tab" data-toggle="tab" href="#nav-pet" role="tab" aria-controls="nav-pet" aria-selected="false">Pet</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="tab-pane fade show active" id="nav-personagem" role="tabpanel" aria-labelledby="nav-personagem-tab">
                 <div id="area_personagem">
-                  
                     <ul class="list-unstyled">
                         <li>RAÇA: <span class="font-weight-bold" id="raca"></span></li>
                         <li>CLASSE: <span class="font-weight-bold" id="classe"></span></li>
@@ -51,9 +52,8 @@
                     <hr>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="tab-pane fade" id="nav-jogo" role="tabpanel" aria-labelledby="nav-jogo-tab">
                 <div id="area_jogo">
-                    
                     <ul class="list-unstyled">
                         <li>ESTILO: <span class="font-weight-bold" id="estilo"></span></li>
                         <li>GRÁFICOS: <span class="font-weight-bold" id="graficos"></span></li>
@@ -65,7 +65,23 @@
                     <hr>
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_personagem" class="btn btn-dark" onclick="gerarJogo()">GERAR JOGO</button>
+                            <button type="button" id="botao_jogo" class="btn btn-dark" onclick="gerarJogo()">GERAR JOGO</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-pet" role="tabpanel" aria-labelledby="nav-pet-tab">
+                <div id="area_pet">        
+                    <ul class="list-unstyled">
+                        <li>ESPECIE: <span class="font-weight-bold" id="especie"></span></li>
+                    </ul>
+                </div>
+                <div id="area_botao_pet" class="container">
+                    <hr>
+                    <div class="text-center">
+                        <div class="text-center btn-group" role="group" aria-label="click">
+                            <button type="button" id="botao_pet" class="btn btn-dark" onclick="gerarPet()">GERAR PET</button>
                         </div>
                     </div>
                     <hr>
@@ -90,6 +106,11 @@
             document.getElementById("graficos").innerHTML = jogo.graficos;
             document.getElementById("tema").innerHTML = jogo.tema;
             document.getElementById("jogabilidade").innerHTML = jogo.jogabilidade;
+        }
+        //pet
+        function gerarPet(){
+            pet.gerar();
+            document.getElementById("especie").innerHTML = pet.especie;
         }
     </script>
     <noscript>
