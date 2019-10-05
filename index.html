@@ -74,6 +74,7 @@
                     <ul class="list-unstyled">
                         <li>ESPÉCIE: <span class="font-weight-bold" id="especie"></span></li>
                         <li>IDADE: <span class="font-weight-bold" id="idade"></span></li>
+                        <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_comportamento"></span></li>
                     </ul>
                 </div>
                 <div id="area_botao_pet" class="container">
@@ -125,6 +126,7 @@
             pet.gerar();
             document.getElementById("especie").innerHTML = pet.especie;
             document.getElementById("idade").innerHTML = pet.idade;
+            document.getElementById("pet_comportamento").innerHTML = pet.comportamento;
         }
         //arma
         function gerarArma(){
