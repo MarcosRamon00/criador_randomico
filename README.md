@@ -7,6 +7,7 @@ Cria randomicamente personagens e jogos a partir de critérios pré estabelacido
 ## O que é criado:
 - Personagem
 - Jogo eletronicos
+- Pet
 
 ## Critérios utilizados
 ### Personagem
@@ -24,8 +25,8 @@ baseado nos critérios de criação de personagem em RPGs.
 - tema (exemplo: velho oeste e cyberpunk.)
 - jogabilidade (exemplo: shooter e point and click.)
 
-## Pet
-- especie (exemplo: gato , cachorro e dragão)
+### Pet
+- espécie (exemplo: gato , cachorro e dragão)
 - idade (exemplo: filhote e adulto)
 
 ## Referências
