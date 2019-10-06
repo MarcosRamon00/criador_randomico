@@ -12,7 +12,7 @@ const arma = {
         return lista_armas[this.escolherCaracteristica(lista_armas)];
     },
     setCondicao:function(){
-        let lista_condicoes = ["amaldisuado","abensuado","velho","novo"];
+        let lista_condicoes = ["amaldiçoado","abençoado","velho","novo"];
         return lista_condicoes[this.escolherCaracteristica(lista_condicoes)];
     },
     setEstilo:function(){
