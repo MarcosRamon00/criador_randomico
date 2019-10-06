@@ -8,6 +8,8 @@ const nocturnal = {
         this.state = false;
     },
     enable:function(){
+        localStorage.setItem("theme_criador_randomico",'nocturnal');
+        //css
         document.body.style.background = "black";
         document.body.style.color = "white";
         document.getElementById("nav-personagem-tab").style.color = "white";
@@ -21,6 +23,8 @@ const nocturnal = {
         this.setEnableState();
     },
     disable:function(){
+        localStorage.removeItem("theme_criador_randomico");
+        //css
         document.body.style.background = "white";
         document.body.style.color = "black";
         document.getElementById("nav-personagem-tab").style.color = "black";
