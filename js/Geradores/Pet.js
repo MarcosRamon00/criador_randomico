@@ -16,7 +16,7 @@ const pet = {
         return lista_idades[this.escolherCaracteristica(lista_idades)];
     },
     setComportamento:function(){
-        let lista_comportamentos = ["brincalhão(ona)","bravo(a)"];
+        let lista_comportamentos = ["brincalhão(ona)","bravo(a)","preguiçoso(a)"];
         return lista_comportamentos[this.escolherCaracteristica(lista_comportamentos)];
     },
     gerar:function(){
