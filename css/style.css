@@ -1,7 +1,10 @@
 body{
     background-color: rgb(243, 243, 243);
+    font-family: 'Roboto Mono', monospace;
 }
-
+a{
+    color:black;
+}
 #titulo{
     text-align: center;
 }
