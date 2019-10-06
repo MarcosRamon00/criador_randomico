@@ -28,7 +28,7 @@ baseado nos critérios de criação de personagem em RPGs.
 ### Pet
 - espécie (exemplo: gato , cachorro e dragão)
 - idade (exemplo: filhote e adulto)
-
+- comportamento( exemplo: bravo(a) ou brincalhao(ona))
 ## Referências
 - [Gênero de jogos eletrônicos](https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos)
 
