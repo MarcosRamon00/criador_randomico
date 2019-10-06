@@ -6,7 +6,7 @@ function setThemeDefault(){//seta tema anteriormente selecionado mesmo se tela r
         case 'nocturnal':
             themeNocturnal();
         default:
-            console.log("hello");
+            null;
     }
 }
 function themeNocturnal(){
