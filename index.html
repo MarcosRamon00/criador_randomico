@@ -9,15 +9,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--js proprio-->
     <script src="js/Geradores/Personagem.js"></script>
     <script src="js/Geradores/Jogo.js"></script>
     <script src="js/Geradores/Pet.js"></script>
     <script src="js/Geradores/Arma.js"></script>
+    <script src="js/Temas/nocturnal.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Criador Randômico</title>
 </head>
 <body>
+    <section id="botoes_temas" class="text-right">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <button id="btn_tema_nocturnal" class="btn btn-dark btn-sm" onclick="themeNocturnal()">nocturnal</button>
+        </div>
+    </section>
     <h1 id="titulo" class="text-center">Criador Randômico</h1>
     <section class="container">
         <h2 id="titulo_descricao">Descrição</h2>
@@ -104,6 +111,7 @@
         </div>
     </section>
     <script src="js/libGeradores.js"></script>
+    <script src="js/libThemes.js"></script>
     <noscript>
         Necessário ativar javascript para este site funcione!
     </noscript>
