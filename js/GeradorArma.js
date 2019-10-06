@@ -8,7 +8,7 @@ const arma = {
     },
 
     setArma:function(){
-        let lista_armas = ["arma laser","galinha de borracha","machado","lança","espada","escudo"];
+        let lista_armas = ["arma laser","galinha de borracha","machado","lança","espada","escudo","foice","arco e flecha"];
         return lista_armas[this.escolherCaracteristica(lista_armas)];
     },
     setCondicao:function(){
