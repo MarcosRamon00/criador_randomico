@@ -10,10 +10,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <script src="js/GeradorPersonagem.js"></script>
-    <script src="js/GeradorJogo.js"></script>
-    <script src="js/GeradorPet.js"></script>
-    <script src="js/GeradorArma.js"></script>
+    <script src="js/Geradores/Personagem.js"></script>
+    <script src="js/Geradores/Jogo.js"></script>
+    <script src="js/Geradores/Pet.js"></script>
+    <script src="js/Geradores/Arma.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Criador Randômico</title>
 </head>
@@ -37,11 +37,11 @@
             <div class="tab-pane fade show active" id="nav-personagem" role="tabpanel" aria-labelledby="nav-personagem-tab">
                 <div id="area_personagem">
                     <ul class="list-unstyled">
-                        <li>RAÇA: <span class="font-weight-bold" id="raca"></span></li>
-                        <li>CLASSE: <span class="font-weight-bold" id="classe"></span></li>
-                        <li>QUALIDADE: <span class="font-weight-bold" id="qualidade"></span></li>
-                        <li>DEFEITO: <span class="font-weight-bold" id="defeito"></span></li>
-                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="motivacao"></span></li>
+                        <li>RAÇA: <span class="font-weight-bold" id="personagem_raca"></span></li>
+                        <li>CLASSE: <span class="font-weight-bold" id="personagem_classe"></span></li>
+                        <li>QUALIDADE: <span class="font-weight-bold" id="personagem_qualidade"></span></li>
+                        <li>DEFEITO: <span class="font-weight-bold" id="personagem_defeito"></span></li>
+                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="personagem_motivacao"></span></li>
                     </ul>
                 </div>
                 <div id="area_botao_personagem" class="container">
@@ -55,10 +55,10 @@
             <div class="tab-pane fade" id="nav-jogo" role="tabpanel" aria-labelledby="nav-jogo-tab">
                 <div id="area_jogo">
                     <ul class="list-unstyled">
-                        <li>ESTILO: <span class="font-weight-bold" id="estilo"></span></li>
-                        <li>GRÁFICOS: <span class="font-weight-bold" id="graficos"></span></li>
-                        <li>TEMA: <span class="font-weight-bold" id="tema"></span></li>
-                        <li>JOGABILIDADE: <span class="font-weight-bold" id="jogabilidade"></span></li>
+                        <li>ESTILO: <span class="font-weight-bold" id="jogo_estilo"></span></li>
+                        <li>GRÁFICOS: <span class="font-weight-bold" id="jogo_graficos"></span></li>
+                        <li>TEMA: <span class="font-weight-bold" id="jogo_tema"></span></li>
+                        <li>JOGABILIDADE: <span class="font-weight-bold" id="jogo_jogabilidade"></span></li>
                     </ul>
                 </div>
                 <div id="area_botao_jogo" class="container">
@@ -72,8 +72,8 @@
             <div class="tab-pane fade" id="nav-pet" role="tabpanel" aria-labelledby="nav-pet-tab">
                 <div id="area_pet">        
                     <ul class="list-unstyled">
-                        <li>ESPÉCIE: <span class="font-weight-bold" id="especie"></span></li>
-                        <li>IDADE: <span class="font-weight-bold" id="idade"></span></li>
+                        <li>ESPÉCIE: <span class="font-weight-bold" id="pet_especie"></span></li>
+                        <li>IDADE: <span class="font-weight-bold" id="pet_idade"></span></li>
                         <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_comportamento"></span></li>
                     </ul>
                 </div>
@@ -88,8 +88,8 @@
             <div class="tab-pane fade" id="nav-arma" role="tabpanel" aria-labelledby="nav-arma-tab">
                 <div id="area_arma">        
                     <ul class="list-unstyled">
-                        <li>ARMA: <span class="font-weight-bold" id="arma"></span></li>
-                        <li>CONDIÇÃO: <span class="font-weight-bold" id="condicao"></span></li>
+                        <li>ARMA: <span class="font-weight-bold" id="arma_arma"></span></li>
+                        <li>CONDIÇÃO: <span class="font-weight-bold" id="arma_condicao"></span></li>
                         <li>ESTILO: <span class="font-weight-bold" id="arma_estilo"></span></li>
                     </ul>
                 </div>
@@ -103,39 +103,7 @@
             </div>
         </div>
     </section>
-    <script>
-        //personagem
-        function gerarPersonagem(){//gerar personagem
-            personagem.gerar();//gera personagem
-            document.getElementById("raca").innerHTML = personagem.raca;
-            document.getElementById("classe").innerHTML = personagem.classe;
-            document.getElementById("qualidade").innerHTML = personagem.qualidade;
-            document.getElementById("defeito").innerHTML = personagem.defeito;
-            document.getElementById("motivacao").innerHTML = personagem.motivacao;
-        }
-        //jogo
-        function gerarJogo(){//gerar jogo
-            jogo.gerar();//gera jogo
-            document.getElementById("estilo").innerHTML = jogo.estilo;
-            document.getElementById("graficos").innerHTML = jogo.graficos;
-            document.getElementById("tema").innerHTML = jogo.tema;
-            document.getElementById("jogabilidade").innerHTML = jogo.jogabilidade;
-        }
-        //pet
-        function gerarPet(){
-            pet.gerar();
-            document.getElementById("especie").innerHTML = pet.especie;
-            document.getElementById("idade").innerHTML = pet.idade;
-            document.getElementById("pet_comportamento").innerHTML = pet.comportamento;
-        }
-        //arma
-        function gerarArma(){
-            arma.gerar();
-            document.getElementById("arma").innerHTML = arma.arma;
-            document.getElementById("condicao").innerHTML = arma.condicao;
-            document.getElementById("arma_estilo").innerHTML = arma.estilo;
-        }
-    </script>
+    <script src="js/libGeradores.js"></script>
     <noscript>
         Necessário ativar javascript para este site funcione!
     </noscript>
