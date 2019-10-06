@@ -1,6 +1,6 @@
 setThemeDefault();
 
-function setThemeDefault(){
+function setThemeDefault(){//seta tema anteriormente selecionado mesmo se tela recarregada
     let themeBefore = localStorage.getItem('theme_criador_randomico');
     switch(themeBefore){
         case 'nocturnal':
@@ -10,7 +10,6 @@ function setThemeDefault(){
     }
 }
 function themeNocturnal(){
-    //localStorage.clear();
     if(nocturnal.state == false){
         nocturnal.enable();
     }else{
