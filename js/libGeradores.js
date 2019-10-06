@@ -9,7 +9,7 @@
      personagem.gerar();//gera personagem
      document.getElementById("personagem_raca").innerHTML = personagem.raca;
      document.getElementById("personagem_classe").innerHTML = personagem.classe;
-     document.getElementById("persoangem_qualidade").innerHTML = personagem.qualidade;
+     document.getElementById("personagem_qualidade").innerHTML = personagem.qualidade;
      document.getElementById("personagem_defeito").innerHTML = personagem.defeito;
      document.getElementById("personagem_motivacao").innerHTML = personagem.motivacao;
  }
