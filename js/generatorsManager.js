@@ -1,37 +1,37 @@
  //init cria objetos iniciais
- gerarPersonagem();
- gerarJogo();
- gerarPet();
- gerarArma();
+ generateCharacter();
+ generateGame();
+ generatePet();
+ generateWeapon();
  
- //personagem
- function gerarPersonagem(){//gerar personagem
-     personagem.gerar();//gera personagem
-     document.getElementById("personagem_raca").innerHTML = personagem.raca;
-     document.getElementById("personagem_classe").innerHTML = personagem.classe;
-     document.getElementById("personagem_qualidade").innerHTML = personagem.qualidade;
-     document.getElementById("personagem_defeito").innerHTML = personagem.defeito;
-     document.getElementById("personagem_motivacao").innerHTML = personagem.motivacao;
+ //character
+ function generateCharacter(){//gerar character
+     character.generate();//gera character
+     document.getElementById("character_breed").innerHTML = character.breed;
+     document.getElementById("character_class").innerHTML = character.class;
+     document.getElementById("character_quality").innerHTML = character.quality;
+     document.getElementById("character_defect").innerHTML = character.defect;
+     document.getElementById("character_motivation").innerHTML = character.motivation;
  }
- //jogo
- function gerarJogo(){//gerar jogo
-     jogo.gerar();//gera jogo
-     document.getElementById("jogo_estilo").innerHTML = jogo.estilo;
-     document.getElementById("jogo_graficos").innerHTML = jogo.graficos;
-     document.getElementById("jogo_tema").innerHTML = jogo.tema;
-     document.getElementById("jogo_jogabilidade").innerHTML = jogo.jogabilidade;
+ //game
+ function generateGame(){//gerar game
+     game.generate();//gera game
+     document.getElementById("game_style").innerHTML = game.style;
+     document.getElementById("game_grafics").innerHTML = game.grafics;
+     document.getElementById("game_theme").innerHTML = game.theme;
+     document.getElementById("game_gameplay").innerHTML = game.gameplay;
  }
  //pet
- function gerarPet(){
-     pet.gerar();
-     document.getElementById("pet_especie").innerHTML = pet.especie;
-     document.getElementById("pet_idade").innerHTML = pet.idade;
-     document.getElementById("pet_comportamento").innerHTML = pet.comportamento;
+ function generatePet(){
+     pet.generate();
+     document.getElementById("pet_species").innerHTML = pet.species;
+     document.getElementById("pet_age").innerHTML = pet.age;
+     document.getElementById("pet_behavior").innerHTML = pet.behavior;
  }
- //arma
- function gerarArma(){
-     arma.gerar();
-     document.getElementById("arma_arma").innerHTML = arma.arma;
-     document.getElementById("arma_condicao").innerHTML = arma.condicao;
-     document.getElementById("arma_estilo").innerHTML = arma.estilo;
+ //weapon
+ function generateWeapon(){
+     weapon.generate();
+     document.getElementById("weapon_weapon").innerHTML = weapon.weapon;
+     document.getElementById("weapon_condition").innerHTML = weapon.condition;
+     document.getElementById("weapon_style").innerHTML = weapon.style;
  }

@@ -1,27 +1,27 @@
 const pet = {
-    especie :'',
-    idade :'',
-    comportamento:'',
+    species:'',
+    age:'',
+    behavior:'',
 
-    escolherCaracteristica:function(lista){//escolhe caracterista de uma lista
-        return Math.round(Math.random() * (lista.length - 1));
+    chooseFeature:function(list){//escolhe caracterista de uma list
+        return Math.round(Math.random() * (list.length - 1));
     },
 
-    setEspecie:function(){
-        let lista_especies = ["gato","cachorro","rato","coruja","cobra","galinha"];
-        return lista_especies[this.escolherCaracteristica(lista_especies)];
+    setSpecies:function(){
+        let list_species = ["gato","cachorro","rato","coruja","cobra","galinha"];
+        return list_species[this.chooseFeature(list_species)];
     },
-    setIdade:function(){
-        let lista_idades = ["filhote","adulto","idoso"];
-        return lista_idades[this.escolherCaracteristica(lista_idades)];
+    setAge:function(){
+        let list_age = ["filhote","adulto","idoso"];
+        return list_age[this.chooseFeature(list_age)];
     },
-    setComportamento:function(){
-        let lista_comportamentos = ["brincalhão(ona)","bravo(a)","preguiçoso(a)"];
-        return lista_comportamentos[this.escolherCaracteristica(lista_comportamentos)];
+    setBehavior:function(){
+        let list_behavior = ["brincalhão(ona)","bravo(a)","preguiçoso(a)"];
+        return list_behavior[this.chooseFeature(list_behavior)];
     },
-    gerar:function(){
-        this.especie = this.setEspecie();
-        this.idade = this.setIdade();
-        this.comportamento = this.setComportamento();
+    generate:function(){
+        this.species = this.setSpecies();
+        this.age = this.setAge();
+        this.behavior = this.setBehavior();
     }
 }
