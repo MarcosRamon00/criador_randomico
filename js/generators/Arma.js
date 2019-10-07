@@ -16,7 +16,7 @@ const arma = {
         return lista_condicoes[this.escolherCaracteristica(lista_condicoes)];
     },
     setEstilo:function(){
-        let lista_estilos = ["medieval","viking","futurista","cyberpunk"];
+        let lista_estilos = ["medieval","viking","futurista","cyberpunk","velho oeste","steampunk"];
         return lista_estilos[this.escolherCaracteristica(lista_estilos)];
     },
     gerar:function(){
