@@ -1,11 +1,11 @@
  //init cria objetos iniciais
- gerarPersonagem();
- gerarJogo();
- gerarPet();
- gerarArma();
+ generateCharacter();
+ generateGame();
+ generatePet();
+ generateWeapon();
  
  //personagem
- function gerarPersonagem(){//gerar personagem
+ function generateCharacter(){//gerar personagem
      personagem.gerar();//gera personagem
      document.getElementById("personagem_raca").innerHTML = personagem.raca;
      document.getElementById("personagem_classe").innerHTML = personagem.classe;
@@ -14,7 +14,7 @@
      document.getElementById("personagem_motivacao").innerHTML = personagem.motivacao;
  }
  //jogo
- function gerarJogo(){//gerar jogo
+ function generateGame(){//gerar jogo
      jogo.gerar();//gera jogo
      document.getElementById("jogo_estilo").innerHTML = jogo.estilo;
      document.getElementById("jogo_graficos").innerHTML = jogo.graficos;
@@ -22,14 +22,14 @@
      document.getElementById("jogo_jogabilidade").innerHTML = jogo.jogabilidade;
  }
  //pet
- function gerarPet(){
+ function generatePet(){
      pet.gerar();
      document.getElementById("pet_especie").innerHTML = pet.especie;
      document.getElementById("pet_idade").innerHTML = pet.idade;
      document.getElementById("pet_comportamento").innerHTML = pet.comportamento;
  }
  //arma
- function gerarArma(){
+ function generateWeapon(){
      arma.gerar();
      document.getElementById("arma_arma").innerHTML = arma.arma;
      document.getElementById("arma_condicao").innerHTML = arma.condicao;
