@@ -12,14 +12,14 @@ const nocturnal = {
         //css
         document.body.style.background = "black";
         document.body.style.color = "white";
-        document.getElementById("nav-personagem-tab").style.color = "white";
-        document.getElementById("nav-personagem-tab").style.background = "black";
-        document.getElementById("nav-jogo-tab").style.color = "white";
-        document.getElementById("nav-jogo-tab").style.background = "black";
+        document.getElementById("nav-character-tab").style.color = "white";
+        document.getElementById("nav-character-tab").style.background = "black";
+        document.getElementById("nav-game-tab").style.color = "white";
+        document.getElementById("nav-game-tab").style.background = "black";
         document.getElementById("nav-pet-tab").style.color = "white";
         document.getElementById("nav-pet-tab").style.background = "black";
-        document.getElementById("nav-arma-tab").style.color = "white";
-        document.getElementById("nav-arma-tab").style.background = "black";
+        document.getElementById("nav-weapon-tab").style.color = "white";
+        document.getElementById("nav-weapon-tab").style.background = "black";
         this.setEnableState();
     },
     disable:function(){
@@ -27,14 +27,14 @@ const nocturnal = {
         //css
         document.body.style.background = "white";
         document.body.style.color = "black";
-        document.getElementById("nav-personagem-tab").style.color = "black";
-        document.getElementById("nav-personagem-tab").style.background = "white";
-        document.getElementById("nav-jogo-tab").style.color = "black";
-        document.getElementById("nav-jogo-tab").style.background = "white";
+        document.getElementById("nav-character-tab").style.color = "black";
+        document.getElementById("nav-character-tab").style.background = "white";
+        document.getElementById("nav-game-tab").style.color = "black";
+        document.getElementById("nav-game-tab").style.background = "white";
         document.getElementById("nav-pet-tab").style.color = "black";
         document.getElementById("nav-pet-tab").style.background = "white";
-        document.getElementById("nav-arma-tab").style.color = "black";
-        document.getElementById("nav-arma-tab").style.background = "white";
+        document.getElementById("nav-weapon-tab").style.color = "black";
+        document.getElementById("nav-weapon-tab").style.background = "white";
         this.setDisableState();
     }
 }
