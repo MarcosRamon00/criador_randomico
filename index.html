@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!--js proprio-->
-    <script src="js/generators/Personagem.js"></script>
-    <script src="js/generators/Jogo.js"></script>
+    <script src="js/generators/character.js"></script>
+    <script src="js/generators/game.js"></script>
     <script src="js/generators/Pet.js"></script>
-    <script src="js/generators/Arma.js"></script>
+    <script src="js/generators/weapon.js"></script>
     <script src="js/themes/nocturnal.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Criador Randômico</title>
@@ -34,44 +34,44 @@
         <h2 class="text-left">Geradores</h2>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-personagem-tab" data-toggle="tab" href="#nav-personagem" role="tab" aria-controls="nav-personagem" aria-selected="true">Personagem</a>
-                <a class="nav-item nav-link" id="nav-jogo-tab" data-toggle="tab" href="#nav-jogo" role="tab" aria-controls="nav-jogo" aria-selected="false">Jogo</a>
+                <a class="nav-item nav-link active" id="nav-character-tab" data-toggle="tab" href="#nav-character" role="tab" aria-controls="nav-character" aria-selected="true">character</a>
+                <a class="nav-item nav-link" id="nav-game-tab" data-toggle="tab" href="#nav-game" role="tab" aria-controls="nav-game" aria-selected="false">game</a>
                 <a class="nav-item nav-link" id="nav-pet-tab" data-toggle="tab" href="#nav-pet" role="tab" aria-controls="nav-pet" aria-selected="false">Pet</a>
-                <a class="nav-item nav-link" id="nav-arma-tab" data-toggle="tab" href="#nav-arma" role="tab" aria-controls="nav-arma" aria-selected="false">Arma</a>
+                <a class="nav-item nav-link" id="nav-weapon-tab" data-toggle="tab" href="#nav-weapon" role="tab" aria-controls="nav-weapon" aria-selected="false">weapon</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-personagem" role="tabpanel" aria-labelledby="nav-personagem-tab">
-                <div id="area_personagem">
+            <div class="tab-pane fade show active" id="nav-character" role="tabpanel" aria-labelledby="nav-character-tab">
+                <div id="area_character">
                     <ul class="list-unstyled">
-                        <li>RAÇA: <span class="font-weight-bold" id="personagem_raca"></span></li>
-                        <li>CLASSE: <span class="font-weight-bold" id="personagem_classe"></span></li>
-                        <li>QUALIDADE: <span class="font-weight-bold" id="personagem_qualidade"></span></li>
-                        <li>DEFEITO: <span class="font-weight-bold" id="personagem_defeito"></span></li>
-                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="personagem_motivacao"></span></li>
+                        <li>RAÇA: <span class="font-weight-bold" id="character_raca"></span></li>
+                        <li>CLASSE: <span class="font-weight-bold" id="character_classe"></span></li>
+                        <li>QUALIDADE: <span class="font-weight-bold" id="character_qualidade"></span></li>
+                        <li>DEFEITO: <span class="font-weight-bold" id="character_defeito"></span></li>
+                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="character_motivacao"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_personagem" class="container">
+                <div id="area_botao_character" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_personagem" class="btn btn-dark" onclick="generateCharacter()">GERAR PERSONAGEM</button>
+                            <button type="button" id="botao_character" class="btn btn-dark" onclick="generateCharacter()">GERAR character</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-jogo" role="tabpanel" aria-labelledby="nav-jogo-tab">
-                <div id="area_jogo">
+            <div class="tab-pane fade" id="nav-game" role="tabpanel" aria-labelledby="nav-game-tab">
+                <div id="area_game">
                     <ul class="list-unstyled">
-                        <li>ESTILO: <span class="font-weight-bold" id="jogo_estilo"></span></li>
-                        <li>GRÁFICOS: <span class="font-weight-bold" id="jogo_graficos"></span></li>
-                        <li>TEMA: <span class="font-weight-bold" id="jogo_tema"></span></li>
-                        <li>JOGABILIDADE: <span class="font-weight-bold" id="jogo_jogabilidade"></span></li>
+                        <li>ESTILO: <span class="font-weight-bold" id="game_estilo"></span></li>
+                        <li>GRÁFICOS: <span class="font-weight-bold" id="game_graficos"></span></li>
+                        <li>TEMA: <span class="font-weight-bold" id="game_tema"></span></li>
+                        <li>JOGABILIDADE: <span class="font-weight-bold" id="game_jogabilidade"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_jogo" class="container">
+                <div id="area_botao_game" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_jogo" class="btn btn-dark" onclick="generateGame()">GERAR JOGO</button>
+                            <button type="button" id="botao_game" class="btn btn-dark" onclick="generateGame()">GERAR game</button>
                         </div>
                     </div>
                 </div>
@@ -92,18 +92,18 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-arma" role="tabpanel" aria-labelledby="nav-arma-tab">
-                <div id="area_arma">        
+            <div class="tab-pane fade" id="nav-weapon" role="tabpanel" aria-labelledby="nav-weapon-tab">
+                <div id="area_weapon">        
                     <ul class="list-unstyled">
-                        <li>ARMA: <span class="font-weight-bold" id="arma_arma"></span></li>
-                        <li>CONDIÇÃO: <span class="font-weight-bold" id="arma_condicao"></span></li>
-                        <li>ESTILO: <span class="font-weight-bold" id="arma_estilo"></span></li>
+                        <li>weapon: <span class="font-weight-bold" id="weapon_weapon"></span></li>
+                        <li>CONDIÇÃO: <span class="font-weight-bold" id="weapon_condicao"></span></li>
+                        <li>ESTILO: <span class="font-weight-bold" id="weapon_estilo"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_arma" class="container">
+                <div id="area_botao_weapon" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_arma" class="btn btn-dark" onclick="generateWeapon()">GERAR ARMA</button>
+                            <button type="button" id="botao_weapon" class="btn btn-dark" onclick="generateWeapon()">GERAR weapon</button>
                         </div>
                     </div>
                 </div>
