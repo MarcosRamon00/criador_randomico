@@ -34,27 +34,27 @@
         <h2 class="text-left">Geradores</h2>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-character-tab" data-toggle="tab" href="#nav-character" role="tab" aria-controls="nav-character" aria-selected="true">character</a>
-                <a class="nav-item nav-link" id="nav-game-tab" data-toggle="tab" href="#nav-game" role="tab" aria-controls="nav-game" aria-selected="false">game</a>
-                <a class="nav-item nav-link" id="nav-pet-tab" data-toggle="tab" href="#nav-pet" role="tab" aria-controls="nav-pet" aria-selected="false">Pet</a>
-                <a class="nav-item nav-link" id="nav-weapon-tab" data-toggle="tab" href="#nav-weapon" role="tab" aria-controls="nav-weapon" aria-selected="false">weapon</a>
+                <a class="nav-item nav-link active" id="nav-character-tab" data-toggle="tab" href="#nav-character" role="tab" aria-controls="nav-character" aria-selected="true">PERSONAGEM</a>
+                <a class="nav-item nav-link" id="nav-game-tab" data-toggle="tab" href="#nav-game" role="tab" aria-controls="nav-game" aria-selected="false">JOGO</a>
+                <a class="nav-item nav-link" id="nav-pet-tab" data-toggle="tab" href="#nav-pet" role="tab" aria-controls="nav-pet" aria-selected="false">PET</a>
+                <a class="nav-item nav-link" id="nav-weapon-tab" data-toggle="tab" href="#nav-weapon" role="tab" aria-controls="nav-weapon" aria-selected="false">ARMA</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-character" role="tabpanel" aria-labelledby="nav-character-tab">
                 <div id="area_character">
                     <ul class="list-unstyled">
-                        <li>RAÇA: <span class="font-weight-bold" id="character_raca"></span></li>
-                        <li>CLASSE: <span class="font-weight-bold" id="character_classe"></span></li>
-                        <li>QUALIDADE: <span class="font-weight-bold" id="character_qualidade"></span></li>
-                        <li>DEFEITO: <span class="font-weight-bold" id="character_defeito"></span></li>
-                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="character_motivacao"></span></li>
+                        <li>RAÇA: <span class="font-weight-bold" id="character_breed"></span></li>
+                        <li>CLASSE: <span class="font-weight-bold" id="character_class"></span></li>
+                        <li>QUALIDADE: <span class="font-weight-bold" id="character_quality"></span></li>
+                        <li>DEFEITO: <span class="font-weight-bold" id="character_defect"></span></li>
+                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="character_motivation"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_character" class="container">
+                <div id="area_button_character" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_character" class="btn btn-dark" onclick="generateCharacter()">GERAR character</button>
+                            <button type="button" id="button_character" class="btn btn-dark" onclick="generateCharacter()">GERAR PERSONAGEM</button>
                         </div>
                     </div>
                 </div>
@@ -62,16 +62,16 @@
             <div class="tab-pane fade" id="nav-game" role="tabpanel" aria-labelledby="nav-game-tab">
                 <div id="area_game">
                     <ul class="list-unstyled">
-                        <li>ESTILO: <span class="font-weight-bold" id="game_estilo"></span></li>
-                        <li>GRÁFICOS: <span class="font-weight-bold" id="game_graficos"></span></li>
-                        <li>TEMA: <span class="font-weight-bold" id="game_tema"></span></li>
-                        <li>JOGABILIDADE: <span class="font-weight-bold" id="game_jogabilidade"></span></li>
+                        <li>ESTILO: <span class="font-weight-bold" id="game_style"></span></li>
+                        <li>GRÁFICOS: <span class="font-weight-bold" id="game_grafics"></span></li>
+                        <li>TEMA: <span class="font-weight-bold" id="game_theme"></span></li>
+                        <li>JOGABILIDADE: <span class="font-weight-bold" id="game_gameplay"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_game" class="container">
+                <div id="area_button_game" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_game" class="btn btn-dark" onclick="generateGame()">GERAR game</button>
+                            <button type="button" id="button_game" class="btn btn-dark" onclick="generateGame()">GERAR JOGO</button>
                         </div>
                     </div>
                 </div>
@@ -79,15 +79,15 @@
             <div class="tab-pane fade" id="nav-pet" role="tabpanel" aria-labelledby="nav-pet-tab">
                 <div id="area_pet">        
                     <ul class="list-unstyled">
-                        <li>ESPÉCIE: <span class="font-weight-bold" id="pet_especie"></span></li>
-                        <li>IDADE: <span class="font-weight-bold" id="pet_idade"></span></li>
-                        <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_comportamento"></span></li>
+                        <li>ESPÉCIE: <span class="font-weight-bold" id="pet_species"></span></li>
+                        <li>IDADE: <span class="font-weight-bold" id="pet_age"></span></li>
+                        <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_behavior"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_pet" class="container">
+                <div id="area_button_pet" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_pet" class="btn btn-dark" onclick="generatePet()">GERAR PET</button>
+                            <button type="button" id="button_pet" class="btn btn-dark" onclick="generatePet()">GERAR PET</button>
                         </div>
                     </div>
                 </div>
@@ -95,15 +95,15 @@
             <div class="tab-pane fade" id="nav-weapon" role="tabpanel" aria-labelledby="nav-weapon-tab">
                 <div id="area_weapon">        
                     <ul class="list-unstyled">
-                        <li>weapon: <span class="font-weight-bold" id="weapon_weapon"></span></li>
-                        <li>CONDIÇÃO: <span class="font-weight-bold" id="weapon_condicao"></span></li>
-                        <li>ESTILO: <span class="font-weight-bold" id="weapon_estilo"></span></li>
+                        <li>ARMA: <span class="font-weight-bold" id="weapon_weapon"></span></li>
+                        <li>CONDIÇÃO: <span class="font-weight-bold" id="weapon_condition"></span></li>
+                        <li>ESTILO: <span class="font-weight-bold" id="weapon_style"></span></li>
                     </ul>
                 </div>
-                <div id="area_botao_weapon" class="container">
+                <div id="area_button_weapon" class="container">
                     <div class="text-center">
                         <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="botao_weapon" class="btn btn-dark" onclick="generateWeapon()">GERAR weapon</button>
+                            <button type="button" id="button_weapon" class="btn btn-dark" onclick="generateWeapon()">GERAR ARMA</button>
                         </div>
                     </div>
                 </div>
