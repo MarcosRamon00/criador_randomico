@@ -1,4 +1,4 @@
-# Criador randomico
+# Randomatrick
 
 ## Descrição
 Cria randomicamente personagens e jogos a partir de critérios pré estabelacidos.
