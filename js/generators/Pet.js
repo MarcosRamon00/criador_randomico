@@ -16,7 +16,7 @@ const pet = {
         return list_age[this.chooseFeature(list_age)];
     },
     setBehavior:function(){
-        let list_behavior = ["brincalhão(ona)","bravo(a)","preguiçoso(a)"];
+        let list_behavior = ["bobo(a)","bravo(a)","preguiçoso(a)","esperto(a)"];
         return list_behavior[this.chooseFeature(list_behavior)];
     },
     generate:function(){
