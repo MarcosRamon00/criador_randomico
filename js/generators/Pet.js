@@ -8,7 +8,7 @@ const pet = {
     },
 
     setSpecies:function(){
-        let list_species = ["gato","cachorro","rato","coruja","cobra","galinha"];
+        let list_species = ["gato","cachorro","rato","coruja","cobra","galinha","sapo","urso","largato","aranha"];
         return list_species[this.chooseFeature(list_species)];
     },
     setAge:function(){
