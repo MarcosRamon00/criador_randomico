@@ -5,6 +5,8 @@ function setThemeDefault(){//seta tema anteriormente selecionado mesmo se tela r
     switch(themeBefore){
         case 'nocturnal':
             themeNocturnal();
+        case 'cyberpunk':
+            themeCyberpunk();
         default:
             null;
     }
@@ -14,5 +16,13 @@ function themeNocturnal(){
         nocturnal.enable();
     }else{
         nocturnal.disable();
+    }
+}
+
+function themeCyberpunk(){
+    if(cyberpunk.state == false){
+        cyberpunk.enable();
+    }else{
+        cyberpunk.disable();
     }
 }
