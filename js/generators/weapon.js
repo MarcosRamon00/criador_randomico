@@ -12,7 +12,7 @@ const weapon = {
         return list_weapon[this.chooseFeature(list_weapon)];
     },
     setCondition:function(){
-        let list_condition = ["amaldiçoado","abençoado","velho","novo"];
+        let list_condition = ["amaldiçoado","abençoado","velho","novo","envenenado"];
         return list_condition[this.chooseFeature(list_condition)];
     },
     setStyle:function(){
