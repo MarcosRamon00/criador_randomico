@@ -8,15 +8,32 @@ const pet = {
     },
 
     setSpecies:function(){
-        let list_species = ["gato","cachorro","rato","coruja","cobra","galinha","sapo","urso","largato","aranha"];
+        let list_species = [
+            "gato",
+            "cachorro",
+            "rato",
+            "coruja",
+            "cobra",
+            "galinha",
+            "sapo",
+            "urso",
+            "largato",
+            "aranha"];
         return list_species[this.chooseFeature(list_species)];
     },
     setAge:function(){
-        let list_age = ["filhote","adulto","idoso"];
+        let list_age = [
+            "filhote",
+            "adulto",
+            "idoso"];
         return list_age[this.chooseFeature(list_age)];
     },
     setBehavior:function(){
-        let list_behavior = ["bobo(a)","bravo(a)","preguiçoso(a)","esperto(a)"];
+        let list_behavior = [
+            "bobo(a)",
+            "bravo(a)",
+            "preguiçoso(a)",
+            "esperto(a)"];
         return list_behavior[this.chooseFeature(list_behavior)];
     },
     generate:function(){
