@@ -7,7 +7,7 @@
  //character
  function generateCharacter(){//gerar character
      character.generate();//gera character
-     document.getElementById("character_breed").innerHTML = character.breed;
+     document.getElementById("character_type").innerHTML = character.type;
      document.getElementById("character_class").innerHTML = character.class;
      document.getElementById("character_quality").innerHTML = character.quality;
      document.getElementById("character_defect").innerHTML = character.defect;

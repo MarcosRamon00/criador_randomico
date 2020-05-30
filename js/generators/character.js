@@ -1,5 +1,5 @@
 const character = {
-    breed :'',
+    type :'',
     class:'',
     quality:'',
     defect:'',
@@ -10,9 +10,10 @@ const character = {
         return Math.round(Math.random() * (list.length - 1));
     },
 
-    setBreed:function(){
-        let list_breed = ["humano","fera","demônio","anjo","ciborgue","robô","espírito","humano-peixe","humano-passáro","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental das plantas","elemental do ar","elemental da terra","elemental do raio","elemental de gelo","elemental da luz","elemental da sombra","mutante","alienigina","fada","ogro","anão(a)","golem","dragão","meio dragão","fantasma amaldiçoado"];
-        return list_breed[this.chooseFeature(list_breed)];
+    setType:function(){
+        let list_type = [
+            "humano","fera","demônio","anjo","ciborgue","robô","espírito","humano-peixe","humano-passáro","humano-réptil","meio elemental","elemental","elemental do fogo","elemental da água","elemental das plantas","elemental do ar","elemental da terra","elemental do raio","elemental de gelo","elemental da luz","elemental da sombra","mutante","alienigina","fada","ogro","anão(a)","golem","dragão","meio dragão","fantasma amaldiçoado"];
+        return list_type[this.chooseFeature(list_type)];
     },
 
     setClass:function(){
@@ -37,7 +38,7 @@ const character = {
     },
     
     generate:function(){
-        this.breed = this.setBreed();
+        this.type = this.setType();
         this.class = this.setClass();
         this.quality = this.setQuatity();
         this.defect = this.setDefect();
