@@ -8,15 +8,34 @@ const weapon = {
     },
 
     setWeapon:function(){
-        let list_weapon = ["arma laser","galinha de borracha","machado","lança","espada","escudo","foice","arco e flecha"];
+        let list_weapon = [
+            "arma laser",
+            "galinha de borracha",
+            "machado",
+            "lança",
+            "espada",
+            "escudo",
+            "foice",
+            "arco e flecha"];
         return list_weapon[this.chooseFeature(list_weapon)];
     },
     setCondition:function(){
-        let list_condition = ["amaldiçoado","abençoado","velho","novo","envenenado"];
+        let list_condition = [
+            "amaldiçoado",
+            "abençoado",
+            "velho",
+            "novo",
+            "envenenado"];
         return list_condition[this.chooseFeature(list_condition)];
     },
     setStyle:function(){
-        let list_style = ["medieval","viking","futurista","cyberpunk","velho oeste","steampunk"];
+        let list_style = [
+            "medieval",
+            "viking",
+            "futurista",
+            "cyberpunk",
+            "velho oeste",
+            "steampunk"];
         return list_style[this.chooseFeature(list_style)];
     },
     generate:function(){
