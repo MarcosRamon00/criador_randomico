@@ -12,9 +12,9 @@ const character = {
 
     setType:function(){
         let list_type = [
-            "humano",
+            "humano(a)",
             "fera",
-            "demônio",
+            "demônio(a)",
             "anjo",
             "ciborgue",
             "robô",
@@ -36,7 +36,7 @@ const character = {
             "mutante",
             "alienigina",
             "fada",
-            "ogro",
+            "ogro(a)",
             "anão(a)",
             "golem",
             "dragão",
