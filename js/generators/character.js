@@ -41,7 +41,9 @@ const character = {
             "golem",
             "dragão",
             "meio dragão",
-            "fantasma amaldiçoado"];
+            "fantasma amaldiçoado",
+            "entidade",
+            "deus(a)"];
         return list_type[this.chooseFeature(list_type)];
     },
 
