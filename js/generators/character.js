@@ -43,7 +43,9 @@ const character = {
             "meio dragão",
             "fantasma amaldiçoado",
             "entidade",
-            "deus(a)"];
+            "deus(a)",
+            "barbáro(a)",
+            "viking"];
         return list_type[this.chooseFeature(list_type)];
     },
 
