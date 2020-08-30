@@ -18,7 +18,8 @@ const pet = {
             "sapo",
             "urso",
             "largato",
-            "aranha"];
+            "aranha",
+            "pombo"];
         return list_species[this.chooseFeature(list_species)];
     },
     setAge:function(){
