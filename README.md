@@ -8,6 +8,7 @@ Cria randomicamente personagens e jogos a partir de critérios pré estabelacido
 - Personagem
 - Jogo eletronicos
 - Pet
+- Arma
 
 ## Critérios utilizados
 ### Personagem
