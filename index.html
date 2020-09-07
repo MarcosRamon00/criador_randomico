@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- bulma css -->
+    <link rel="stylesheet" href="framework/bulmacss/bulma.min.css" type="text/css">
     <!--js proprio-->
     <script src="js/generators/character.js"></script>
     <script src="js/generators/game.js"></script>
@@ -21,99 +17,68 @@
     <title>Randomatrick</title>
 </head>
 <body>
-    <section id="botoes_temas" class="text-right">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <button id="btn_theme_nocturnal" class="btn btn-dark btn-sm" onclick="themeNocturnal()">nocturnal</button>
-        </div>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <button id="btn_theme_cyberpunk" class="btn btn-dark btn-sm" onclick="themeCyberpunk()">cyberpunk</button>
+    <section class="hero  is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Randomatrick</h1>
+                <h2 class="subtitle">Gerador de ideias de acordo com alguns critérios.</h2>
+            </div>
         </div>
     </section>
-    <h1 id="titulo" class="text-center">Randomatrick</h1>
-    <section class="container">
-        <h2 id="titulo_descricao">Descrição</h2>
-        <p>Gerador de ideias de acordo com alguns critérios.</p>
-    </section>
-    <section class="container">
-        <h2 class="text-left">Geradores</h2>
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-character-tab" data-toggle="tab" href="#nav-character" role="tab" aria-controls="nav-character" aria-selected="true">PERSONAGEM</a>
-                <a class="nav-item nav-link" id="nav-game-tab" data-toggle="tab" href="#nav-game" role="tab" aria-controls="nav-game" aria-selected="false">JOGO</a>
-                <a class="nav-item nav-link" id="nav-pet-tab" data-toggle="tab" href="#nav-pet" role="tab" aria-controls="nav-pet" aria-selected="false">PET</a>
-                <a class="nav-item nav-link" id="nav-weapon-tab" data-toggle="tab" href="#nav-weapon" role="tab" aria-controls="nav-weapon" aria-selected="false">ARMA</a>
-            </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-character" role="tabpanel" aria-labelledby="nav-character-tab">
-                <div id="area_character">
-                    <ul class="list-unstyled">
-                        <li>RAÇA: <span class="font-weight-bold" id="character_type"></span></li>
-                        <li>CLASSE: <span class="font-weight-bold" id="character_class"></span></li>
-                        <li>QUALIDADE: <span class="font-weight-bold" id="character_quality"></span></li>
-                        <li>DEFEITO: <span class="font-weight-bold" id="character_defect"></span></li>
-                        <li>MOTIVAÇÃO: <span class="font-weight-bold" id="character_motivation"></span></li>
-                    </ul>
-                </div>
-                <div id="area_button_character" class="container">
-                    <div class="text-center">
-                        <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="button_character" class="btn btn-dark" onclick="generateCharacter()">GERAR PERSONAGEM</button>
-                        </div>
-                    </div>
+    <hr/>
+    <section class="section">
+        <div class="columns">
+            <div class="column ">
+                <ul>
+                    <li>RAÇA: <span class="font-weight-bold" id="character_type"></span></li>
+                    <li>CLASSE: <span class="font-weight-bold" id="character_class"></span></li>
+                    <li>QUALIDADE: <span class="font-weight-bold" id="character_quality"></span></li>
+                    <li>DEFEITO: <span class="font-weight-bold" id="character_defect"></span></li>
+                    <li>MOTIVAÇÃO: <span class="font-weight-bold" id="character_motivation"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_character" class="button is-dark" onclick="generateCharacter()">GERAR PERSONAGEM</button>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-game" role="tabpanel" aria-labelledby="nav-game-tab">
-                <div id="area_game">
-                    <ul class="list-unstyled">
-                        <li>ESTILO: <span class="font-weight-bold" id="game_style"></span></li>
-                        <li>GRÁFICOS: <span class="font-weight-bold" id="game_grafics"></span></li>
-                        <li>TEMA: <span class="font-weight-bold" id="game_theme"></span></li>
-                        <li>JOGABILIDADE: <span class="font-weight-bold" id="game_gameplay"></span></li>
-                    </ul>
-                </div>
-                <div id="area_button_game" class="container">
-                    <div class="text-center">
-                        <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="button_game" class="btn btn-dark" onclick="generateGame()">GERAR JOGO</button>
-                        </div>
-                    </div>
+            <div class="column ">
+                <ul>
+                    <li>ESTILO: <span class="font-weight-bold" id="game_style"></span></li>
+                    <li>GRÁFICOS: <span class="font-weight-bold" id="game_grafics"></span></li>
+                    <li>TEMA: <span class="font-weight-bold" id="game_theme"></span></li>
+                    <li>JOGABILIDADE: <span class="font-weight-bold" id="game_gameplay"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_character" class="button is-dark" onclick="generateGame()">GERAR GAME</button>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-pet" role="tabpanel" aria-labelledby="nav-pet-tab">
-                <div id="area_pet">        
-                    <ul class="list-unstyled">
-                        <li>ESPÉCIE: <span class="font-weight-bold" id="pet_species"></span></li>
-                        <li>IDADE: <span class="font-weight-bold" id="pet_age"></span></li>
-                        <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_behavior"></span></li>
-                    </ul>
-                </div>
-                <div id="area_button_pet" class="container">
-                    <div class="text-center">
-                        <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="button_pet" class="btn btn-dark" onclick="generatePet()">GERAR PET</button>
-                        </div>
-                    </div>
+        </div>
+         <div class="columns">   
+            <div class="column ">
+                <ul>
+                    <li>ESPÉCIE: <span class="font-weight-bold" id="pet_species"></span></li>
+                    <li>IDADE: <span class="font-weight-bold" id="pet_age"></span></li>
+                    <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_behavior"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_character" class="button is-dark" onclick="generatePet()">GERAR PET</button>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-weapon" role="tabpanel" aria-labelledby="nav-weapon-tab">
-                <div id="area_weapon">        
-                    <ul class="list-unstyled">
-                        <li>ARMA: <span class="font-weight-bold" id="weapon_weapon"></span></li>
-                        <li>CONDIÇÃO: <span class="font-weight-bold" id="weapon_condition"></span></li>
-                        <li>ESTILO: <span class="font-weight-bold" id="weapon_style"></span></li>
-                    </ul>
-                </div>
-                <div id="area_button_weapon" class="container">
-                    <div class="text-center">
-                        <div class="text-center btn-group" role="group" aria-label="click">
-                            <button type="button" id="button_weapon" class="btn btn-dark" onclick="generateWeapon()">GERAR ARMA</button>
-                        </div>
-                    </div>
+            <div class="column ">
+                <ul>
+                    <li>ARMA: <span class="font-weight-bold" id="weapon_weapon"></span></li>
+                    <li>CONDIÇÃO: <span class="font-weight-bold" id="weapon_condition"></span></li>
+                    <li>ESTILO: <span class="font-weight-bold" id="weapon_style"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_character" class="button is-dark" onclick="generateWeapon()">GERAR ARMA</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">Randomatrick 2020 </div>
+    </footer>
     <script src="js/managers/generatorsManager.js"></script>
     <script src="js/managers/themeManager.js"></script>
     <noscript>
