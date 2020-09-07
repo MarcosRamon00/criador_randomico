@@ -70,7 +70,13 @@ const character = {
             "arqueiro(a)",
             "lanceiro(a)",
             "necromante",
-            "contador(a)"];
+            "contador(a)",
+            "cantor(a) sertanejo",
+            "vocalista de uma banda de rock",
+            "baterista",
+            "guitarrista",
+            "tecladista",
+            "baixista"];
         return list_class[this.chooseFeature(list_class)];
     },
 
