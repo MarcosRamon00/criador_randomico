@@ -15,60 +15,97 @@
     <title>Randomatrick</title>
 </head>
 <body>
-    <section class="hero  is-bold">
+    <section class="hero is-dark is-medium is-bold">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">Randomatrick</h1>
-                <h2 class="subtitle">Gerador de ideias de acordo com alguns critérios.</h2>
+                <h1 class="title is-1">Randomatrick</h1>
+                <p class="subtitle ">Gerador de ideias com base em características.</p>
             </div>
         </div>
     </section>
     <hr/>
     <section class="section">
-        <div class="columns">
-            <div class="column ">
-                <ul>
-                    <li>RAÇA: <span class="font-weight-bold" id="character_type"></span></li>
-                    <li>CLASSE: <span class="font-weight-bold" id="character_class"></span></li>
-                    <li>QUALIDADE: <span class="font-weight-bold" id="character_quality"></span></li>
-                    <li>DEFEITO: <span class="font-weight-bold" id="character_defect"></span></li>
-                    <li>MOTIVAÇÃO: <span class="font-weight-bold" id="character_motivation"></span></li>
-                </ul> 
+        <h2 class="title is-3 has-text-centered">Combinações disponíveis</h2>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered">
                 <div>
-                    <button type="button" id="button_character" class="button is-dark" onclick="generateCharacter()">GERAR PERSONAGEM</button>
+                    <p class="heading">personagens</p>
+                    <p class="title" id="numberPossibilitiesCharacteres">x</p>
                 </div>
             </div>
-            <div class="column ">
-                <ul>
-                    <li>ESTILO: <span class="font-weight-bold" id="game_style"></span></li>
-                    <li>GRÁFICOS: <span class="font-weight-bold" id="game_grafics"></span></li>
-                    <li>TEMA: <span class="font-weight-bold" id="game_theme"></span></li>
-                    <li>JOGABILIDADE: <span class="font-weight-bold" id="game_gameplay"></span></li>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">jogos</p>
+                    <p class="title" id="numberPossibilitiesGames">x</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">pets</p>
+                    <p class="title" id="numberPossibilitiesPets">x</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">armas</p>
+                    <p class="title" id="numberPossibilitiesWeapons">x</p>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="content is-medium title is-4 has-text-centered">Personagem</h2>
+                <ul class="block">
+                    <li><b>RAÇA:</b>  <span id="character_type"></span></li>
+                    <li><b>CLASSE:</b> <span  id="character_class"></span></li>
+                    <li><b>QUALIDADE:</b> <span  id="character_quality"></span></li>
+                    <li><b>DEFEITO:</b> <span  id="character_defect"></span></li>
+                    <li><b>MOTIVAÇÃO:</b> <span id="character_motivation"></span></li>
                 </ul> 
                 <div>
-                    <button type="button" id="button_character" class="button is-dark" onclick="generateGame()">GERAR GAME</button>
+                    <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generateCharacter()">GERAR PERSONAGEM</button>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="content is-medium title is-4 has-text-centered">Jogo</h2>
+                <ul class="block">
+                    <li><b>ESTILO:</b> <span id="game_style"></span></li>
+                    <li><b>GRÁFICOS:</b> <span  id="game_grafics"></span></li>
+                    <li><b>TEMA:</b> <span id="game_theme"></span></li>
+                    <li><b>JOGABILIDADE:</b> <span  id="game_gameplay"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generateGame()">GERAR JOGO</button>
                 </div>
             </div>
         </div>
          <div class="columns">   
-            <div class="column ">
-                <ul>
-                    <li>ESPÉCIE: <span class="font-weight-bold" id="pet_species"></span></li>
-                    <li>IDADE: <span class="font-weight-bold" id="pet_age"></span></li>
-                    <li>COMPORTAMENTO: <span class="font-weight-bold" id="pet_behavior"></span></li>
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="content is-medium title is-4 has-text-centered">Pet</h2>
+                <ul class="block">
+                    <li><b>ESPÉCIE:</b> <span class="font-weight-bold" id="pet_species"></span></li>
+                    <li><b>IDADE:</b> <span class="font-weight-bold" id="pet_age"></span></li>
+                    <li><b>COMPORTAMENTO:</b> <span class="font-weight-bold" id="pet_behavior"></span></li>
                 </ul> 
                 <div>
-                    <button type="button" id="button_character" class="button is-dark" onclick="generatePet()">GERAR PET</button>
+                    <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generatePet()">GERAR PET</button>
                 </div>
             </div>
-            <div class="column ">
-                <ul>
-                    <li>ARMA: <span class="font-weight-bold" id="weapon_weapon"></span></li>
-                    <li>CONDIÇÃO: <span class="font-weight-bold" id="weapon_condition"></span></li>
-                    <li>ESTILO: <span class="font-weight-bold" id="weapon_style"></span></li>
+         </div>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="content is-medium title is-4 has-text-centered">Arma</h2>
+                <ul class="block">
+                    <li><b>ARMA:</b> <span class="font-weight-bold" id="weapon_weapon"></span></li>
+                    <li><b>CONDIÇÃO:</b> <span class="font-weight-bold" id="weapon_condition"></span></li>
+                    <li><b>ESTILO:</b> <span class="font-weight-bold" id="weapon_style"></span></li>
                 </ul> 
                 <div>
-                    <button type="button" id="button_character" class="button is-dark" onclick="generateWeapon()">GERAR ARMA</button>
+                    <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generateWeapon()">GERAR ARMA</button>
                 </div>
             </div>
         </div>
