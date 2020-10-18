@@ -7,37 +7,60 @@ const weapon = {
         return Math.round(Math.random() * (list.length - 1));
     },
 
+    list_weapon : [
+        "arma laser",
+        "galinha de borracha",
+        "machado",
+        "lança",
+        "espada",
+        "escudo",
+        "foice",
+        "arco e flecha"],
+    
+    list_condition : [
+        "amaldiçoado",
+        "abençoado",
+        "velho",
+        "novo",
+        "envenenado"],
+
+    list_style : [
+        "medieval",
+        "viking",
+        "futurista",
+        "cyberpunk",
+        "velho oeste",
+        "steampunk"],
+
     setWeapon:function(){
-        let list_weapon = [
-            "arma laser",
-            "galinha de borracha",
-            "machado",
-            "lança",
-            "espada",
-            "escudo",
-            "foice",
-            "arco e flecha"];
-        return list_weapon[this.chooseFeature(list_weapon)];
+        return this.list_weapon[this.chooseFeature(this.list_weapon)];
     },
+
+    getLengthWeapons:function(){
+        return this.list_weapon.length;
+    },
+
     setCondition:function(){
-        let list_condition = [
-            "amaldiçoado",
-            "abençoado",
-            "velho",
-            "novo",
-            "envenenado"];
-        return list_condition[this.chooseFeature(list_condition)];
+        return this.list_condition[this.chooseFeature(this.list_condition)];
     },
+
+    getLengthConditions:function(){
+        return this.list_condition.length;
+    },
+
     setStyle:function(){
-        let list_style = [
-            "medieval",
-            "viking",
-            "futurista",
-            "cyberpunk",
-            "velho oeste",
-            "steampunk"];
-        return list_style[this.chooseFeature(list_style)];
+        return this.list_style[this.chooseFeature(this.list_style)];
     },
+
+    getLengthStyles:function(){
+        return this.list_style.length;
+    },
+
+    getNumberPossibilities:function(){
+        let possibilities =  this.getLengthWeapons() * this.getLengthConditions() * this.getLengthStyles();
+        return possibilities;
+    },
+
     generate:function(){
         this.weapon = this.setWeapon();
         this.condition = this.setCondition();

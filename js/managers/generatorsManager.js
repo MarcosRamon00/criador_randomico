@@ -4,6 +4,13 @@
  generatePet();
  generateWeapon();
  
+ //mostra o total de possiveis combinacoes
+ showPossibilitiesCharacters();
+ showPossibilitiesGames();
+ showPossibilitiesPets();
+ showPossibilitiesWeapons();
+
+
  //character
  function generateCharacter(){//gerar character
      character.generate();//gera character
@@ -13,6 +20,10 @@
      document.getElementById("character_defect").innerHTML = character.defect;
      document.getElementById("character_motivation").innerHTML = character.motivation;
  }
+ function showPossibilitiesCharacters(){//mostra a quantidade de personagens possiveis
+     document.getElementById("numberPossibilitiesCharacteres").innerHTML = character.getNumberPossibilities();
+ }
+
  //game
  function generateGame(){//gerar game
      game.generate();//gera game
@@ -21,6 +32,9 @@
      document.getElementById("game_theme").innerHTML = game.theme;
      document.getElementById("game_gameplay").innerHTML = game.gameplay;
  }
+ function showPossibilitiesGames(){
+     document.getElementById("numberPossibilitiesGames").innerHTML = game.getNumberPossibilities();
+ }
  //pet
  function generatePet(){
      pet.generate();
@@ -28,6 +42,9 @@
      document.getElementById("pet_age").innerHTML = pet.age;
      document.getElementById("pet_behavior").innerHTML = pet.behavior;
  }
+ function showPossibilitiesPets(){
+    document.getElementById("numberPossibilitiesPets").innerHTML = pet.getNumberPossibilities();
+}
  //weapon
  function generateWeapon(){
      weapon.generate();
@@ -35,3 +52,6 @@
      document.getElementById("weapon_condition").innerHTML = weapon.condition;
      document.getElementById("weapon_style").innerHTML = weapon.style;
  }
+ function showPossibilitiesWeapons(){
+    document.getElementById("numberPossibilitiesWeapons").innerHTML = weapon.getNumberPossibilities();
+}
