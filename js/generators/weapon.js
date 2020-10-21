@@ -22,7 +22,9 @@ const weapon = {
         "abençoado",
         "velho",
         "novo",
-        "envenenado"],
+        "envenenado",
+        "enferrujado",
+        "coberto de marcas estranhas"],
 
     list_style : [
         "medieval",
@@ -30,7 +32,9 @@ const weapon = {
         "futurista",
         "cyberpunk",
         "velho oeste",
-        "steampunk"],
+        "steampunk",
+        "dieselpunk",
+        "solarpunk"],
 
     setWeapon:function(){
         return this.list_weapon[this.chooseFeature(this.list_weapon)];
