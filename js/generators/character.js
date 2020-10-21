@@ -117,7 +117,13 @@ const character = {
         "poder",
         "em busca de paz interior",
         "salvar seu povo",
-        "salvar sua família"],
+        "salvar sua família",
+        "encontrar uma pessoa",
+        "aproveitar a vida",
+        "buscar conhecimento",
+        "salvação",
+        "agradar uma pessoa especifica",
+        "irritar uma pessoa especifica"],
 
     setType:function(){
         return this.list_type[this.chooseFeature(this.list_type)];
