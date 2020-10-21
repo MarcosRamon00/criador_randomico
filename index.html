@@ -11,6 +11,7 @@
     <script src="js/generators/game.js"></script>
     <script src="js/generators/pet.js"></script>
     <script src="js/generators/weapon.js"></script>
+    <script src="js/generators/food.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Randomatrick</title>
 </head>
@@ -49,6 +50,12 @@
                 <div>
                     <p class="heading">armas</p>
                     <p class="title" id="numberPossibilitiesWeapons">x</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">comidas</p>
+                    <p class="title" id="numberPossibilitiesFoods">x</p>
                 </div>
             </div>
         </nav>
@@ -106,6 +113,19 @@
                 </ul> 
                 <div>
                     <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generateWeapon()">GERAR ARMA</button>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="content is-medium title is-4 has-text-centered">Comida</h2>
+                <ul class="block">
+                    <li><b>Tipo:</b> <span class="font-weight-bold" id="food_type"></span></li>
+                    <li><b>Ingrediente principal:</b> <span class="font-weight-bold" id="food_main_ingredient"></span></li>
+                    <li><b>Condição:</b> <span class="font-weight-bold" id="food_condition"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generateFood()">GERAR COMIDA</button>
                 </div>
             </div>
         </div>

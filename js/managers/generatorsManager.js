@@ -3,12 +3,15 @@
  generateGame();
  generatePet();
  generateWeapon();
- 
+ generateFood();
+
+
  //mostra o total de possiveis combinacoes
  showPossibilitiesCharacters();
  showPossibilitiesGames();
  showPossibilitiesPets();
  showPossibilitiesWeapons();
+ showPossibilitiesFoods();
 
 
  //character
@@ -54,4 +57,15 @@
  }
  function showPossibilitiesWeapons(){
     document.getElementById("numberPossibilitiesWeapons").innerHTML = weapon.getNumberPossibilities();
+}
+
+//food
+function generateFood(){
+    food.generate();
+    document.getElementById("food_type").innerHTML = food.type;
+    document.getElementById("food_main_ingredient").innerHTML = food.main_ingredient;
+    document.getElementById("food_condition").innerHTML = food.condition;
+}
+function showPossibilitiesFoods(){
+   document.getElementById("numberPossibilitiesFoods").innerHTML = food.getNumberPossibilities();
 }
