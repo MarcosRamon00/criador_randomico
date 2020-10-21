@@ -71,7 +71,12 @@ const character = {
         "baterista",
         "guitarrista",
         "tecladista",
-        "baixista"],
+        "baixista",
+        "palhaço",
+        "sniper",
+        "empresario(a)",
+        "soldado",
+        "pesquisador(a)"],
         
     list_quality : [
         "especialista em algo",
