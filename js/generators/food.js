@@ -2,7 +2,7 @@ const food = {
     type:'',
     main_ingredient:'',
     condition:'',
-    plus:'', // algo a mais ;)
+    plus:'',
 
     chooseFeature:function(list){//escolhe caracterista de uma list
         return Math.round(Math.random() * (list.length - 1));
@@ -32,16 +32,20 @@ const food = {
         "fria(o)",
         " ",
         "amaldicionada",
-        "digitalizada",
+        "digitalizada(o)",
         "envenenada(o)",
         "quente",
-        "morna"],
+        "morna",
+        "monstruoso(a)",
+        "vivo(a)"],
 
     list_plus : [
         "com queijo",
         " ",
         "com presunto",
-        "com queijo e presunto"
+        "com queijo e presunto",
+        "com tentáculos vivos",
+        "com terra"
     ],
 
     setType:function(){
