@@ -21,12 +21,15 @@ const food = {
         "bolo",
         "chá",
         "suco",
-        "refrigerante"],
+        "refrigerante",
+        "não sei"],
 
     list_main_ingredient : [
         "chocolate",
         "peixe",
-        "carne bovina"],
+        "carne bovina",
+        "não sei",
+        "restos"],
     
     list_condition : [
         "fria(o)",
@@ -37,15 +40,17 @@ const food = {
         "quente",
         "morna",
         "monstruoso(a)",
-        "vivo(a)"],
+        "vivo(a)",
+        "não sei"],
 
     list_plus : [
-        "com queijo",
+        "queijo",
         " ",
-        "com presunto",
-        "com queijo e presunto",
-        "com tentáculos vivos",
-        "com terra"
+        "presunto",
+        "queijo e presunto",
+        "tentáculos vivos",
+        "terra",
+        "não sei"
     ],
 
     setType:function(){
