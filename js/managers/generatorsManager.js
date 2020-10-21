@@ -65,6 +65,7 @@ function generateFood(){
     document.getElementById("food_type").innerHTML = food.type;
     document.getElementById("food_main_ingredient").innerHTML = food.main_ingredient;
     document.getElementById("food_condition").innerHTML = food.condition;
+    document.getElementById("food_plus").innerHTML = food.plus;
 }
 function showPossibilitiesFoods(){
    document.getElementById("numberPossibilitiesFoods").innerHTML = food.getNumberPossibilities();

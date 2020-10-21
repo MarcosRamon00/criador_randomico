@@ -2,6 +2,7 @@ const food = {
     type:'',
     main_ingredient:'',
     condition:'',
+    plus:'', // algo a mais ;)
 
     chooseFeature:function(list){//escolhe caracterista de uma list
         return Math.round(Math.random() * (list.length - 1));
@@ -36,6 +37,13 @@ const food = {
         "quente",
         "morna"],
 
+    list_plus : [
+        "com queijo",
+        " ",
+        "com presunto",
+        "com queijo e presunto"
+    ],
+
     setType:function(){
         return this.list_type[this.chooseFeature(this.list_type)];
     },
@@ -61,13 +69,23 @@ const food = {
     },
 
     getNumberPossibilities:function(){
-        let possibilities =  this.getLengthType() * this.getLengthMain_ingredient() * this.getLengthCondition();
+        let possibilities =  this.getLengthType() * this.getLengthMain_ingredient() *
+         this.getLengthCondition() * this.getLengthPlus(); 
         return possibilities;
+    },
+
+    setPlus:function(){
+        return this.list_plus[this.chooseFeature(this.list_plus)];
+    },
+
+    getLengthPlus:function(){
+        return this.list_plus.length;
     },
 
     generate:function(){
         this.type = this.setType();
         this.main_ingredient = this.setMain_ingredient();
         this.condition = this.setCondition();
+        this.plus = this.setPlus();
     }
 }
