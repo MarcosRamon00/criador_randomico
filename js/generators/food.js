@@ -12,7 +12,15 @@ const food = {
         "hamburger",
         "sanduiche",
         "pizza",
-        "bolinho"],
+        "bolinho",
+        "pastel",
+        "biscoito",
+        "bolacha",
+        "torta",
+        "bolo",
+        "chá",
+        "suco",
+        "refrigerante"],
 
     list_main_ingredient : [
         "chocolate",
@@ -20,8 +28,11 @@ const food = {
         "carne bovina"],
     
     list_condition : [
-        "fria",
-        "envenenada",
+        "fria(o)",
+        " ",
+        "amaldicionada",
+        "digitalizada",
+        "envenenada(o)",
         "quente",
         "morna"],
 
