@@ -76,6 +76,7 @@ const character = {
         "baterista",
         "guitarrista",
         "tecladista",
+        "violinista",
         "baixista",
         "palhaço",
         "sniper",
