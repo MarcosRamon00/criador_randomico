@@ -24,7 +24,7 @@
      document.getElementById("character_motivation").innerHTML = character.motivation;
  }
  function showPossibilitiesCharacters(){//mostra a quantidade de personagens possiveis
-     document.getElementById("numberPossibilitiesCharacteres").innerHTML = character.getNumberPossibilities();
+     document.getElementById("numberPossibilitiesCharacteres").innerHTML = utils.abbreviationOfPossibilities(character.getNumberPossibilities());
  }
 
  //game
@@ -36,7 +36,7 @@
      document.getElementById("game_gameplay").innerHTML = game.gameplay;
  }
  function showPossibilitiesGames(){
-     document.getElementById("numberPossibilitiesGames").innerHTML = game.getNumberPossibilities();
+     document.getElementById("numberPossibilitiesGames").innerHTML = utils.abbreviationOfPossibilities(game.getNumberPossibilities());
  }
  //pet
  function generatePet(){
@@ -46,7 +46,7 @@
      document.getElementById("pet_behavior").innerHTML = pet.behavior;
  }
  function showPossibilitiesPets(){
-    document.getElementById("numberPossibilitiesPets").innerHTML = pet.getNumberPossibilities();
+    document.getElementById("numberPossibilitiesPets").innerHTML = utils.abbreviationOfPossibilities(pet.getNumberPossibilities());
 }
  //weapon
  function generateWeapon(){
@@ -56,7 +56,7 @@
      document.getElementById("weapon_style").innerHTML = weapon.style;
  }
  function showPossibilitiesWeapons(){
-    document.getElementById("numberPossibilitiesWeapons").innerHTML = weapon.getNumberPossibilities();
+    document.getElementById("numberPossibilitiesWeapons").innerHTML = utils.abbreviationOfPossibilities(weapon.getNumberPossibilities());
 }
 
 //food
@@ -68,5 +68,5 @@ function generateFood(){
     document.getElementById("food_plus").innerHTML = food.plus;
 }
 function showPossibilitiesFoods(){
-   document.getElementById("numberPossibilitiesFoods").innerHTML = food.getNumberPossibilities();
+   document.getElementById("numberPossibilitiesFoods").innerHTML = utils.abbreviationOfPossibilities(food.getNumberPossibilities());
 }

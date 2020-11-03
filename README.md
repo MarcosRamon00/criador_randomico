@@ -33,6 +33,10 @@ baseado nos critérios de criação de personagem em RPGs.
 ## Referências
 - [Gênero de jogos eletrônicos](https://pt.wikipedia.org/wiki/G%C3%AAneros_de_jogos_eletr%C3%B4nicos#Gr%C3%A1ficos)
 
+## Fontes
+### abreviação do numero de possibilidades
+- [Matemática na Programação? Exemplo Prático em JavaScript // Mão no Código #12](https://www.youtube.com/watch?v=oJxb3hg324M&list=PLVc5bWuiFQ8FQIWovvUiOO9ok_b6chPsh&index=12)
+
 ## Framework utilizados
 - [Bootstrap 4](https://getbootstrap.com/)
 
