@@ -73,11 +73,26 @@
             <div class="column is-half is-offset-one-quarter">
                 <h2 class="content is-medium title is-4 has-text-centered">Personagem</h2>
                 <ul class="block">
-                    <li><b>RAÇA:</b>  <span id="character_type"></span></li>
-                    <li><b>CLASSE:</b> <span  id="character_class"></span></li>
-                    <li><b>QUALIDADE:</b> <span  id="character_quality"></span></li>
-                    <li><b>DEFEITO:</b> <span  id="character_defect"></span></li>
-                    <li><b>MOTIVAÇÃO:</b> <span id="character_motivation"></span></li>
+                    <li class="pb-5">
+                        <h3><b>Raça</b></h3>  
+                        <p><span id="character_type"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Classe</b></h3>
+                        <p><span  id="character_class"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Qualidade</b></h3>
+                        <p><span  id="character_quality"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Defeito</b></h3>
+                        <p><span  id="character_defect"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Motivação</b></h3>
+                        <p><span id="character_motivation"></span></p>
+                    </li>
                 </ul> 
                 <div>
                     <button type="button" id="button_character" class="button is-dark is-fullwidth" onclick="generateCharacter()">GERAR PERSONAGEM</button>
@@ -88,10 +103,22 @@
             <div class="column is-half is-offset-one-quarter">
                 <h2 class="content is-medium title is-4 has-text-centered">Jogo</h2>
                 <ul class="block">
-                    <li><b>ESTILO:</b> <span id="game_style"></span></li>
-                    <li><b>GRÁFICOS:</b> <span  id="game_grafics"></span></li>
-                    <li><b>TEMA:</b> <span id="game_theme"></span></li>
-                    <li><b>JOGABILIDADE:</b> <span  id="game_gameplay"></span></li>
+                    <li class="pb-5">
+                        <h3><b>Estilo</b></h3> 
+                        <p><span id="game_style"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Gráficos</b></h3>
+                        <p><span  id="game_grafics"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Tema</b></h3> 
+                        <p><span id="game_theme"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Jogabilidade</b></h3> 
+                        <p><span  id="game_gameplay"></span></p>
+                    </li>
                 </ul> 
                 <div>
                     <button type="button" id="button_game" class="button is-dark is-fullwidth" onclick="generateGame()">GERAR JOGO</button>
@@ -102,9 +129,18 @@
             <div class="column is-half is-offset-one-quarter">
                 <h2 class="content is-medium title is-4 has-text-centered">Pet</h2>
                 <ul class="block">
-                    <li><b>ESPÉCIE:</b> <span class="font-weight-bold" id="pet_species"></span></li>
-                    <li><b>IDADE:</b> <span class="font-weight-bold" id="pet_age"></span></li>
-                    <li><b>COMPORTAMENTO:</b> <span class="font-weight-bold" id="pet_behavior"></span></li>
+                    <li class="pb-5">
+                        <h3><b>Espécie</b></h3> 
+                        <p><span class="font-weight-bold" id="pet_species"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Idade</b></h3> 
+                        <p><span class="font-weight-bold" id="pet_age"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Comportamento</b></h3>
+                        <p><span class="font-weight-bold" id="pet_behavior"></span></p>
+                    </li>
                 </ul> 
                 <div>
                     <button type="button" id="button_pet" class="button is-dark is-fullwidth" onclick="generatePet()">GERAR PET</button>
@@ -115,9 +151,18 @@
             <div class="column is-half is-offset-one-quarter">
                 <h2 class="content is-medium title is-4 has-text-centered">Arma</h2>
                 <ul class="block">
-                    <li><b>ARMA:</b> <span class="font-weight-bold" id="weapon_weapon"></span></li>
-                    <li><b>CONDIÇÃO:</b> <span class="font-weight-bold" id="weapon_condition"></span></li>
-                    <li><b>ESTILO:</b> <span class="font-weight-bold" id="weapon_style"></span></li>
+                    <li class="pb-5">
+                        <h3><b>Arma</b></h3> 
+                        <p><span class="font-weight-bold" id="weapon_weapon"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Condição</b></h3>
+                        <p><span class="font-weight-bold" id="weapon_condition"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Estilo</b></h3>
+                        <p><span class="font-weight-bold" id="weapon_style"></span></p>
+                    </li>
                 </ul> 
                 <div>
                     <button type="button" id="button_weapon" class="button is-dark is-fullwidth" onclick="generateWeapon()">GERAR ARMA</button>
@@ -128,10 +173,22 @@
             <div class="column is-half is-offset-one-quarter">
                 <h2 class="content is-medium title is-4 has-text-centered">Comida</h2>
                 <ul class="block">
-                    <li><b>Tipo:</b> <span class="font-weight-bold" id="food_type"></span></li>
-                    <li><b>Ingrediente principal:</b> <span class="font-weight-bold" id="food_main_ingredient"></span></li>
-                    <li><b>Condição:</b> <span class="font-weight-bold" id="food_condition"></span></li>
-                    <li><b>Acompanhamento:</b> <span class="font-weight-bold" id="food_plus"></span></li>
+                    <li class="pb-5">
+                        <h3><b>Tipo</b></h3>
+                        <p><span class="font-weight-bold" id="food_type"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Ingrediente principal</b></h3>
+                        <p><span class="font-weight-bold" id="food_main_ingredient"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Condição</b></h3>
+                        <p><span class="font-weight-bold" id="food_condition"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Acompanhamento</b></h3>
+                        <p><span class="font-weight-bold" id="food_plus"></span></p>
+                    </li>
                 </ul> 
                 <div>
                     <button type="button" id="button_food" class="button is-dark is-fullwidth" onclick="generateFood()">GERAR COMIDA</button>
@@ -142,18 +199,54 @@
             <div class="column is-half is-offset-one-quarter">
                 <h2 class="content is-medium title is-4 has-text-centered">Jornada do herói</h2>
                 <ul class="block">
-                    <li><b>Mundo comum:</b> <span class="font-weight-bold" id="hero_journey_ordinary_world"></span></li>
-                    <li><b>O chamando da Aventura:</b> <span class="font-weight-bold" id="hero_journey_call_to_adventure"></span></li>
-                    <li><b>Recusa do chamado:</b> <span class="font-weight-bold" id="hero_journey_refusal_of_the_call"></span></li>
-                    <li><b>Encontro com o mentor:</b> <span class="font-weight-bold" id="hero_journey_meeting_with_the_mentor"></span></li>
-                    <li><b>Cruzamento do primeiro portal:</b><span class="font-weight-bold" id="hero_journey_the_first_threshold"></span></li>
-                    <li><b>Provocações,aliados e inimigos:</b><span class="font-weight-bold" id="hero_journey_tests_allies_and_enemies"></span></li>
-                    <li><b>Aproximação:</b><span class="font-weight-bold" id="hero_journey_approach_to_the_inmost_cave"></span></li>
-                    <li><b>Provocação difícil:</b><span class="font-weight-bold" id="hero_journey_the_ordeal"></span></li>
-                    <li><b>Recompensa:</b><span class="font-weight-bold" id="hero_journey_reward"></span></li>
-                    <li><b>O caminho de volta:</b><span class="font-weight-bold" id="hero_journey_the_road_back"></span></li>
-                    <li><b>Ressurreição do herói:</b><span class="font-weight-bold" id="hero_journey_the_resurrection"></span></li>
-                    <li><b>Regresso com o elixir:</b><span class="font-weight-bold" id="hero_journey_return_with_the_elixir"></span></li>
+                    <li class="pb-5">
+                        <h3 class="is-medium"><b>Mundo comum</b></h3> 
+                        <p><span class="font-weight-bold" id="hero_journey_ordinary_world"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>O chamando da Aventura</b></h3> 
+                        <p><span class="font-weight-bold" id="hero_journey_call_to_adventure"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Recusa do chamado:</b></h3> 
+                        <p><span class="font-weight-bold" id="hero_journey_refusal_of_the_call"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Encontro com o mentor</b></h3> 
+                        <p><span class="font-weight-bold" id="hero_journey_meeting_with_the_mentor"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Cruzamento do primeiro portal:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_the_first_threshold"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Provocações,aliados e inimigos:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_tests_allies_and_enemies"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Aproximação:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_approach_to_the_inmost_cave"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Provocação difícil:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_the_ordeal"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Recompensa:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_reward"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>O caminho de volta:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_the_road_back"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Ressurreição do herói:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_the_resurrection"></span></p>
+                    </li>
+                    <li class="pb-5">
+                        <h3><b>Regresso com o elixir:</b></h3>
+                        <p><span class="font-weight-bold" id="hero_journey_return_with_the_elixir"></span></p>
+                    </li>
                 </ul> 
                 <div>
                     <button type="button" id="button_food" class="button is-dark is-fullwidth" onclick="generateHero_journey()">GERAR JORNADA DO HERÓI</button>
