@@ -206,5 +206,3 @@ const hero_journey = {
         this.return_with_the_elixir = this.setReturn_with_the_elixir();
     }
 }
-
-console.log(hero_journey.getNumberPossibilities());
