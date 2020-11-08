@@ -12,6 +12,7 @@
     <script src="js/generators/pet.js"></script>
     <script src="js/generators/weapon.js"></script>
     <script src="js/generators/food.js"></script>
+    <script src="js/generators/hero_journey.js"></script>
     <script src="js/utils/utils.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Randomatrick</title>
@@ -57,6 +58,12 @@
                 <div>
                     <p class="heading">comidas</p>
                     <p class="title" id="numberPossibilitiesFoods">x</p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered">
+                <div>
+                    <p class="heading">Jornadas do herói</p>
+                    <p class="title" id="numberPossibilitiesHero_journey">x</p>
                 </div>
             </div>
         </nav>
@@ -128,6 +135,28 @@
                 </ul> 
                 <div>
                     <button type="button" id="button_food" class="button is-dark is-fullwidth" onclick="generateFood()">GERAR COMIDA</button>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h2 class="content is-medium title is-4 has-text-centered">Jornada do herói</h2>
+                <ul class="block">
+                    <li><b>Mundo comum:</b> <span class="font-weight-bold" id="hero_journey_ordinary_world"></span></li>
+                    <li><b>O chamando da Aventura:</b> <span class="font-weight-bold" id="hero_journey_call_to_adventure"></span></li>
+                    <li><b>Recusa do chamado:</b> <span class="font-weight-bold" id="hero_journey_refusal_of_the_call"></span></li>
+                    <li><b>Encontro com o mentor:</b> <span class="font-weight-bold" id="hero_journey_meeting_with_the_mentor"></span></li>
+                    <li><b>Cruzamento do primeiro portal:</b><span class="font-weight-bold" id="hero_journey_the_first_threshold"></span></li>
+                    <li><b>Provocações,aliados e inimigos:</b><span class="font-weight-bold" id="hero_journey_tests_allies_and_enemies"></span></li>
+                    <li><b>Aproximação:</b><span class="font-weight-bold" id="hero_journey_approach_to_the_inmost_cave"></span></li>
+                    <li><b>Provocação difícil:</b><span class="font-weight-bold" id="hero_journey_the_ordeal"></span></li>
+                    <li><b>Recompensa:</b><span class="font-weight-bold" id="hero_journey_reward"></span></li>
+                    <li><b>O caminho de volta:</b><span class="font-weight-bold" id="hero_journey_the_road_back"></span></li>
+                    <li><b>Ressurreição do herói:</b><span class="font-weight-bold" id="hero_journey_the_resurrection"></span></li>
+                    <li><b>Regresso com o elixir:</b><span class="font-weight-bold" id="hero_journey_return_with_the_elixir"></span></li>
+                </ul> 
+                <div>
+                    <button type="button" id="button_food" class="button is-dark is-fullwidth" onclick="generateHero_journey()">GERAR JORNADA DO HERÓI</button>
                 </div>
             </div>
         </div>

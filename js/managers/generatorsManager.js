@@ -4,6 +4,7 @@
  generatePet();
  generateWeapon();
  generateFood();
+ generateHero_journey();
 
 
  //mostra o total de possiveis combinacoes
@@ -12,7 +13,7 @@
  showPossibilitiesPets();
  showPossibilitiesWeapons();
  showPossibilitiesFoods();
-
+ showPossibilitiesHero_journey();
 
  //character
  function generateCharacter(){//gerar character
@@ -69,4 +70,24 @@ function generateFood(){
 }
 function showPossibilitiesFoods(){
    document.getElementById("numberPossibilitiesFoods").innerHTML = utils.abbreviationOfPossibilities(food.getNumberPossibilities());
+}
+
+// hero journey
+function generateHero_journey(){
+    hero_journey.generate();
+    document.getElementById("hero_journey_ordinary_world").innerHTML = hero_journey.ordinary_world;
+    document.getElementById("hero_journey_call_to_adventure").innerHTML = hero_journey.call_to_adventure;
+    document.getElementById("hero_journey_refusal_of_the_call").innerHTML = hero_journey.refusal_of_the_call;
+    document.getElementById("hero_journey_meeting_with_the_mentor").innerHTML = hero_journey.meeting_with_the_mentor;
+    document.getElementById("hero_journey_the_first_threshold").innerHTML = hero_journey.crossing_the_first_threshold;
+    document.getElementById("hero_journey_tests_allies_and_enemies").innerHTML = hero_journey.tests_allies_and_enemies;
+    document.getElementById("hero_journey_approach_to_the_inmost_cave").innerHTML = hero_journey.approach_to_the_inmost_cave;
+    document.getElementById("hero_journey_the_ordeal").innerHTML = hero_journey.the_ordeal;
+    document.getElementById("hero_journey_reward").innerHTML = hero_journey.reward;
+    document.getElementById("hero_journey_the_road_back").innerHTML = hero_journey.the_road_back;
+    document.getElementById("hero_journey_the_resurrection").innerHTML = hero_journey.the_resurrection;
+    document.getElementById("hero_journey_return_with_the_elixir").innerHTML = hero_journey.return_with_the_elixir;
+}
+function showPossibilitiesHero_journey(){
+    document.getElementById("numberPossibilitiesHero_journey").innerHTML = utils.abbreviationOfPossibilities(hero_journey.getNumberPossibilities());
 }
