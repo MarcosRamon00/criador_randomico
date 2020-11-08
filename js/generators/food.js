@@ -33,7 +33,7 @@ const food = {
     
     list_condition : [
         "fria(o)",
-        " ",
+        " nenhum ",
         "amaldicionada",
         "digitalizada(o)",
         "envenenada(o)",
@@ -45,7 +45,7 @@ const food = {
 
     list_plus : [
         "queijo",
-        " ",
+        " nenhum ",
         "presunto",
         "queijo e presunto",
         "tentáculos vivos",
