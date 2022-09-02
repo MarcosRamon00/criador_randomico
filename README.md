@@ -56,7 +56,7 @@ baseado nos critérios de criação de personagem em RPGs.
 - [Monomito](https://pt.wikipedia.org/wiki/Monomito)
 
 ## Framework utilizados
-- [Bootstrap 4](https://getbootstrap.com/)
+- [Bulma css](https://bulma.io/)
 
 ## Contribuidores
 ### Testers
