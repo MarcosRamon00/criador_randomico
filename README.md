@@ -60,5 +60,4 @@ baseado nos critérios de criação de personagem em RPGs.
 
 ## Contribuidores
 - [MatheusHTTP](https://github.com/MatheusHTTP)
-- [Jéssica Caetano](https://www.instagram.com/jessicaetano)
 - [Ninjam33](https://github.com/Ninjam33)
