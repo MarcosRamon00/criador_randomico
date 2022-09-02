@@ -59,5 +59,6 @@ baseado nos critérios de criação de personagem em RPGs.
 - [Bootstrap 4](https://getbootstrap.com/)
 
 ## Contribuidores
+### Testers
 - [MatheusHTTP](https://github.com/MatheusHTTP)
 - [Ninjam33](https://github.com/Ninjam33)
